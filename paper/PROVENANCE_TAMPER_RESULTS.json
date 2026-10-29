@@ -1,0 +1,46 @@
+{
+  "test": "B: pinned-source provenance tampering",
+  "clinical_validation": false,
+  "source_manifest_sha256": "3ecb766b7dd00f233f50a8dcf481bfd0135d95add924ca3b852cbca7596d4667",
+  "git": {
+    "sha": "701ec7175f7414ce33f621f5c2fc9e4a88a19a6e",
+    "dirty": false
+  },
+  "run_created_utc": "2026-10-13T17:45:40.281702+00:00",
+  "valid_controls": {
+    "passed": 26,
+    "attempted": 26
+  },
+  "mutations": {
+    "forged_retrieved_id": {
+      "passed": 26,
+      "attempted": 26
+    },
+    "invented_citation_id": {
+      "passed": 26,
+      "attempted": 26
+    },
+    "modified_passage_text": {
+      "passed": 26,
+      "attempted": 26
+    },
+    "wrong_document_version": {
+      "passed": 26,
+      "attempted": 26
+    },
+    "wrong_snapshot_sha256": {
+      "passed": 2,
+      "attempted": 2
+    },
+    "wrong_source_type": {
+      "passed": 26,
+      "attempted": 26
+    }
+  },
+  "rejection_total": {
+    "passed": 132,
+    "attempted": 132
+  },
+  "interpretation": "Identity and checksum rejection only; semantic claim support is not adjudicated",
+  "records_sha256": "a89715ed45a31a318b71c243154f72f44a43acc80185b1805f552c5da059036b"
+}

@@ -1,0 +1,1005 @@
+{
+  "snapshot_type": "developer_judged_known_passage_retrieval_probe",
+  "clinical_validation": false,
+  "annotation_status": "Developer-authored source-section relevance and fact labels; no independent clinician adjudication",
+  "dataset_id": "pinned-source-known-passage-probes",
+  "dataset_version": "1.0.0",
+  "probe_sha256": "cd4d390161581fe2048919881287ef080a6cfec33e840eef0589de2140db93d6",
+  "retrieval_records_sha256": "c85f7b931fadc68e5fed94b19fa7576ecc530bafeb843b0df5f71e55c0373b28",
+  "metrics_sha256": "4b2bcd15b0c55ff5ab2a1c78888139ba8a1e592e3b81e7800de9aa67b98eab5c",
+  "run_manifest_sha256": "f485933954f999156696511df84d6f8c5f05ed528ab3f42f77418ff89cc0eba0",
+  "source_manifest_sha256": "3ecb766b7dd00f233f50a8dcf481bfd0135d95add924ca3b852cbca7596d4667",
+  "run_created_utc": "2026-10-12T20:47:22.835888+00:00",
+  "run_git_sha": "a21ef3625928a5ac2391a75a9880ab561db80d40",
+  "run_git_worktree_dirty": false,
+  "corpus_counts": {
+    "guideline": 17,
+    "drug_label": 9
+  },
+  "embedder": "pritamdeka/S-PubMedBert-MS-MARCO",
+  "collection_order": [
+    "guideline",
+    "drug_label"
+  ],
+  "top_k_per_collection": 5,
+  "replay_metrics_byte_identical": true,
+  "metrics": {
+    "query_count": 10,
+    "completed_queries": 10,
+    "per_query": [
+      {
+        "query_id": "ng136-bp-measurement",
+        "retrieval_latency_ms": 195.0,
+        "retrieved_count": 10,
+        "directly_relevant_in_corpus": 2,
+        "required_fact_count": 2,
+        "at_k": {
+          "1": {
+            "precision": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "recall": {
+              "numerator": 1,
+              "denominator": 2,
+              "value": 0.5
+            },
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "ndcg": 1.0
+          },
+          "3": {
+            "precision": {
+              "numerator": 2,
+              "denominator": 3,
+              "value": 0.6667
+            },
+            "recall": {
+              "numerator": 2,
+              "denominator": 2,
+              "value": 1.0
+            },
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "ndcg": 1.0
+          },
+          "5": {
+            "precision": {
+              "numerator": 2,
+              "denominator": 5,
+              "value": 0.4
+            },
+            "recall": {
+              "numerator": 2,
+              "denominator": 2,
+              "value": 1.0
+            },
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "ndcg": 1.0
+          },
+          "10": {
+            "precision": {
+              "numerator": 2,
+              "denominator": 10,
+              "value": 0.2
+            },
+            "recall": {
+              "numerator": 2,
+              "denominator": 2,
+              "value": 1.0
+            },
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "ndcg": 1.0
+          }
+        },
+        "context_relevance": {
+          "numerator": 2,
+          "denominator": 10,
+          "value": 0.2
+        },
+        "context_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        }
+      },
+      {
+        "query_id": "ng136-stage2-treatment",
+        "retrieval_latency_ms": 42.4,
+        "retrieved_count": 10,
+        "directly_relevant_in_corpus": 2,
+        "required_fact_count": 2,
+        "at_k": {
+          "1": {
+            "precision": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "recall": {
+              "numerator": 1,
+              "denominator": 2,
+              "value": 0.5
+            },
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "ndcg": 1.0
+          },
+          "3": {
+            "precision": {
+              "numerator": 1,
+              "denominator": 3,
+              "value": 0.3333
+            },
+            "recall": {
+              "numerator": 1,
+              "denominator": 2,
+              "value": 0.5
+            },
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "ndcg": 0.649015
+          },
+          "5": {
+            "precision": {
+              "numerator": 2,
+              "denominator": 5,
+              "value": 0.4
+            },
+            "recall": {
+              "numerator": 2,
+              "denominator": 2,
+              "value": 1.0
+            },
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "ndcg": 0.86422
+          },
+          "10": {
+            "precision": {
+              "numerator": 2,
+              "denominator": 10,
+              "value": 0.2
+            },
+            "recall": {
+              "numerator": 2,
+              "denominator": 2,
+              "value": 1.0
+            },
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "ndcg": 0.86422
+          }
+        },
+        "context_relevance": {
+          "numerator": 2,
+          "denominator": 10,
+          "value": 0.2
+        },
+        "context_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        }
+      },
+      {
+        "query_id": "ng136-diabetes-step1",
+        "retrieval_latency_ms": 41.8,
+        "retrieved_count": 10,
+        "directly_relevant_in_corpus": 1,
+        "required_fact_count": 1,
+        "at_k": {
+          "1": {
+            "precision": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "recall": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "ndcg": 1.0
+          },
+          "3": {
+            "precision": {
+              "numerator": 1,
+              "denominator": 3,
+              "value": 0.3333
+            },
+            "recall": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "ndcg": 0.826235
+          },
+          "5": {
+            "precision": {
+              "numerator": 1,
+              "denominator": 5,
+              "value": 0.2
+            },
+            "recall": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "ndcg": 0.826235
+          },
+          "10": {
+            "precision": {
+              "numerator": 1,
+              "denominator": 10,
+              "value": 0.1
+            },
+            "recall": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "ndcg": 0.826235
+          }
+        },
+        "context_relevance": {
+          "numerator": 1,
+          "denominator": 10,
+          "value": 0.1
+        },
+        "context_recall": {
+          "numerator": 1,
+          "denominator": 1,
+          "value": 1.0
+        }
+      },
+      {
+        "query_id": "ng136-age55-step1",
+        "retrieval_latency_ms": 39.0,
+        "retrieved_count": 10,
+        "directly_relevant_in_corpus": 1,
+        "required_fact_count": 1,
+        "at_k": {
+          "1": {
+            "precision": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "recall": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "ndcg": 1.0
+          },
+          "3": {
+            "precision": {
+              "numerator": 1,
+              "denominator": 3,
+              "value": 0.3333
+            },
+            "recall": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "ndcg": 0.826235
+          },
+          "5": {
+            "precision": {
+              "numerator": 1,
+              "denominator": 5,
+              "value": 0.2
+            },
+            "recall": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "ndcg": 0.826235
+          },
+          "10": {
+            "precision": {
+              "numerator": 1,
+              "denominator": 10,
+              "value": 0.1
+            },
+            "recall": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "ndcg": 0.826235
+          }
+        },
+        "context_relevance": {
+          "numerator": 1,
+          "denominator": 10,
+          "value": 0.1
+        },
+        "context_recall": {
+          "numerator": 1,
+          "denominator": 1,
+          "value": 1.0
+        }
+      },
+      {
+        "query_id": "ng136-ccb-oedema",
+        "retrieval_latency_ms": 41.2,
+        "retrieved_count": 10,
+        "directly_relevant_in_corpus": 1,
+        "required_fact_count": 1,
+        "at_k": {
+          "1": {
+            "precision": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "recall": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "ndcg": 1.0
+          },
+          "3": {
+            "precision": {
+              "numerator": 1,
+              "denominator": 3,
+              "value": 0.3333
+            },
+            "recall": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "ndcg": 0.826235
+          },
+          "5": {
+            "precision": {
+              "numerator": 1,
+              "denominator": 5,
+              "value": 0.2
+            },
+            "recall": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "ndcg": 0.944848
+          },
+          "10": {
+            "precision": {
+              "numerator": 1,
+              "denominator": 10,
+              "value": 0.1
+            },
+            "recall": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "ndcg": 0.944848
+          }
+        },
+        "context_relevance": {
+          "numerator": 1,
+          "denominator": 10,
+          "value": 0.1
+        },
+        "context_recall": {
+          "numerator": 1,
+          "denominator": 1,
+          "value": 1.0
+        }
+      },
+      {
+        "query_id": "ng136-ace-arb-combination",
+        "retrieval_latency_ms": 42.6,
+        "retrieved_count": 10,
+        "directly_relevant_in_corpus": 1,
+        "required_fact_count": 1,
+        "at_k": {
+          "1": {
+            "precision": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "recall": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "ndcg": 1.0
+          },
+          "3": {
+            "precision": {
+              "numerator": 1,
+              "denominator": 3,
+              "value": 0.3333
+            },
+            "recall": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "ndcg": 0.826235
+          },
+          "5": {
+            "precision": {
+              "numerator": 1,
+              "denominator": 5,
+              "value": 0.2
+            },
+            "recall": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "ndcg": 0.826235
+          },
+          "10": {
+            "precision": {
+              "numerator": 1,
+              "denominator": 10,
+              "value": 0.1
+            },
+            "recall": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "hit": 1,
+            "reciprocal_rank": 1.0,
+            "ndcg": 0.826235
+          }
+        },
+        "context_relevance": {
+          "numerator": 1,
+          "denominator": 10,
+          "value": 0.1
+        },
+        "context_recall": {
+          "numerator": 1,
+          "denominator": 1,
+          "value": 1.0
+        }
+      },
+      {
+        "query_id": "amlodipine-sensitivity",
+        "retrieval_latency_ms": 39.0,
+        "retrieved_count": 10,
+        "directly_relevant_in_corpus": 1,
+        "required_fact_count": 1,
+        "at_k": {
+          "1": {
+            "precision": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "recall": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "hit": 0,
+            "reciprocal_rank": 0.0,
+            "ndcg": 0.0
+          },
+          "3": {
+            "precision": {
+              "numerator": 0,
+              "denominator": 3,
+              "value": 0.0
+            },
+            "recall": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "hit": 0,
+            "reciprocal_rank": 0.0,
+            "ndcg": 0.0
+          },
+          "5": {
+            "precision": {
+              "numerator": 0,
+              "denominator": 5,
+              "value": 0.0
+            },
+            "recall": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "hit": 0,
+            "reciprocal_rank": 0.0,
+            "ndcg": 0.0
+          },
+          "10": {
+            "precision": {
+              "numerator": 1,
+              "denominator": 10,
+              "value": 0.1
+            },
+            "recall": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "hit": 1,
+            "reciprocal_rank": 0.166667,
+            "ndcg": 0.356207
+          }
+        },
+        "context_relevance": {
+          "numerator": 1,
+          "denominator": 10,
+          "value": 0.1
+        },
+        "context_recall": {
+          "numerator": 1,
+          "denominator": 1,
+          "value": 1.0
+        }
+      },
+      {
+        "query_id": "amlodipine-simvastatin",
+        "retrieval_latency_ms": 39.0,
+        "retrieved_count": 10,
+        "directly_relevant_in_corpus": 1,
+        "required_fact_count": 2,
+        "at_k": {
+          "1": {
+            "precision": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "recall": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "hit": 0,
+            "reciprocal_rank": 0.0,
+            "ndcg": 0.0
+          },
+          "3": {
+            "precision": {
+              "numerator": 0,
+              "denominator": 3,
+              "value": 0.0
+            },
+            "recall": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "hit": 0,
+            "reciprocal_rank": 0.0,
+            "ndcg": 0.0
+          },
+          "5": {
+            "precision": {
+              "numerator": 0,
+              "denominator": 5,
+              "value": 0.0
+            },
+            "recall": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "hit": 0,
+            "reciprocal_rank": 0.0,
+            "ndcg": 0.0
+          },
+          "10": {
+            "precision": {
+              "numerator": 1,
+              "denominator": 10,
+              "value": 0.1
+            },
+            "recall": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "hit": 1,
+            "reciprocal_rank": 0.166667,
+            "ndcg": 0.386115
+          }
+        },
+        "context_relevance": {
+          "numerator": 1,
+          "denominator": 10,
+          "value": 0.1
+        },
+        "context_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        }
+      },
+      {
+        "query_id": "amlodipine-hepatic-failure",
+        "retrieval_latency_ms": 42.0,
+        "retrieved_count": 10,
+        "directly_relevant_in_corpus": 1,
+        "required_fact_count": 1,
+        "at_k": {
+          "1": {
+            "precision": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "recall": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "hit": 0,
+            "reciprocal_rank": 0.0,
+            "ndcg": 0.0
+          },
+          "3": {
+            "precision": {
+              "numerator": 0,
+              "denominator": 3,
+              "value": 0.0
+            },
+            "recall": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "hit": 0,
+            "reciprocal_rank": 0.0,
+            "ndcg": 0.0
+          },
+          "5": {
+            "precision": {
+              "numerator": 0,
+              "denominator": 5,
+              "value": 0.0
+            },
+            "recall": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "hit": 0,
+            "reciprocal_rank": 0.0,
+            "ndcg": 0.0
+          },
+          "10": {
+            "precision": {
+              "numerator": 1,
+              "denominator": 10,
+              "value": 0.1
+            },
+            "recall": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "hit": 1,
+            "reciprocal_rank": 0.166667,
+            "ndcg": 0.294311
+          }
+        },
+        "context_relevance": {
+          "numerator": 1,
+          "denominator": 10,
+          "value": 0.1
+        },
+        "context_recall": {
+          "numerator": 1,
+          "denominator": 1,
+          "value": 1.0
+        }
+      },
+      {
+        "query_id": "amlodipine-aortic-stenosis",
+        "retrieval_latency_ms": 39.1,
+        "retrieved_count": 10,
+        "directly_relevant_in_corpus": 1,
+        "required_fact_count": 1,
+        "at_k": {
+          "1": {
+            "precision": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "recall": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "hit": 0,
+            "reciprocal_rank": 0.0,
+            "ndcg": 0.0
+          },
+          "3": {
+            "precision": {
+              "numerator": 0,
+              "denominator": 3,
+              "value": 0.0
+            },
+            "recall": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "hit": 0,
+            "reciprocal_rank": 0.0,
+            "ndcg": 0.0
+          },
+          "5": {
+            "precision": {
+              "numerator": 0,
+              "denominator": 5,
+              "value": 0.0
+            },
+            "recall": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "hit": 0,
+            "reciprocal_rank": 0.0,
+            "ndcg": 0.0
+          },
+          "10": {
+            "precision": {
+              "numerator": 1,
+              "denominator": 10,
+              "value": 0.1
+            },
+            "recall": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "hit": 1,
+            "reciprocal_rank": 0.166667,
+            "ndcg": 0.373923
+          }
+        },
+        "context_relevance": {
+          "numerator": 1,
+          "denominator": 10,
+          "value": 0.1
+        },
+        "context_recall": {
+          "numerator": 1,
+          "denominator": 1,
+          "value": 1.0
+        }
+      }
+    ],
+    "aggregate": {
+      "query_count": 10,
+      "at_k": {
+        "1": {
+          "precision": {
+            "numerator": 6,
+            "denominator": 10,
+            "value": 0.6
+          },
+          "recall_micro": {
+            "numerator": 6,
+            "denominator": 12,
+            "value": 0.5
+          },
+          "recall_macro": {
+            "numerator": 5.0,
+            "denominator": 10,
+            "value": 0.5
+          },
+          "hit_rate": {
+            "numerator": 6,
+            "denominator": 10,
+            "value": 0.6
+          },
+          "mrr": {
+            "numerator": 6.0,
+            "denominator": 10,
+            "value": 0.6
+          },
+          "ndcg": {
+            "numerator": 6.0,
+            "denominator": 10,
+            "value": 0.6
+          }
+        },
+        "3": {
+          "precision": {
+            "numerator": 7,
+            "denominator": 30,
+            "value": 0.2333
+          },
+          "recall_micro": {
+            "numerator": 7,
+            "denominator": 12,
+            "value": 0.5833
+          },
+          "recall_macro": {
+            "numerator": 5.5,
+            "denominator": 10,
+            "value": 0.55
+          },
+          "hit_rate": {
+            "numerator": 6,
+            "denominator": 10,
+            "value": 0.6
+          },
+          "mrr": {
+            "numerator": 6.0,
+            "denominator": 10,
+            "value": 0.6
+          },
+          "ndcg": {
+            "numerator": 4.953955,
+            "denominator": 10,
+            "value": 0.4954
+          }
+        },
+        "5": {
+          "precision": {
+            "numerator": 8,
+            "denominator": 50,
+            "value": 0.16
+          },
+          "recall_micro": {
+            "numerator": 8,
+            "denominator": 12,
+            "value": 0.6667
+          },
+          "recall_macro": {
+            "numerator": 6.0,
+            "denominator": 10,
+            "value": 0.6
+          },
+          "hit_rate": {
+            "numerator": 6,
+            "denominator": 10,
+            "value": 0.6
+          },
+          "mrr": {
+            "numerator": 6.0,
+            "denominator": 10,
+            "value": 0.6
+          },
+          "ndcg": {
+            "numerator": 5.287773,
+            "denominator": 10,
+            "value": 0.5288
+          }
+        },
+        "10": {
+          "precision": {
+            "numerator": 12,
+            "denominator": 100,
+            "value": 0.12
+          },
+          "recall_micro": {
+            "numerator": 12,
+            "denominator": 12,
+            "value": 1.0
+          },
+          "recall_macro": {
+            "numerator": 10.0,
+            "denominator": 10,
+            "value": 1.0
+          },
+          "hit_rate": {
+            "numerator": 10,
+            "denominator": 10,
+            "value": 1.0
+          },
+          "mrr": {
+            "numerator": 6.666668,
+            "denominator": 10,
+            "value": 0.6667
+          },
+          "ndcg": {
+            "numerator": 6.698329,
+            "denominator": 10,
+            "value": 0.6698
+          }
+        }
+      },
+      "context_relevance": {
+        "numerator": 12,
+        "denominator": 100,
+        "value": 0.12
+      },
+      "context_recall": {
+        "numerator": 13,
+        "denominator": 13,
+        "value": 1.0
+      },
+      "context_relevance_macro": {
+        "numerator": 1.2,
+        "denominator": 10,
+        "value": 0.12
+      },
+      "context_recall_macro": {
+        "numerator": 10.0,
+        "denominator": 10,
+        "value": 1.0
+      }
+    },
+    "retrieval_latency_ms": {
+      "median": 41.5,
+      "p95": 126.4,
+      "max": 195.0
+    },
+    "unavailable_metrics": {
+      "generation_faithfulness": "Requires independent claim-to-source support judgments; source identity is insufficient",
+      "answer_relevance": "Requires a reference question-answer judgment set",
+      "answer_completeness": "Requires an independently defined complete answer or fact checklist for generated reports",
+      "cost_per_query": "Retriever token/cost accounting is not instrumented; local vector-query monetary cost is not recorded",
+      "clinical_task_completion": "No clinician workflow or patient-outcome reference labels"
+    },
+    "definitions": {
+      "binary_relevance": "Grade 2 direct-answer passages; grade 1 related passages do not count for P/Recall/Hit/MRR",
+      "precision_at_k": "Direct-answer passages in actual top K / K; missing slots count as nonrelevant",
+      "recall_at_k": "Direct-answer passages in actual top K / all developer-judged direct-answer passages in the 26-passage corpus",
+      "hit_rate_at_k": "Queries with at least one direct-answer passage in top K / all queries",
+      "mrr_at_k": "Mean reciprocal rank of first direct-answer passage within top K; zero when absent",
+      "ndcg_at_k": "Mean DCG/ideal DCG using gains 2^grade-1 and log2(rank+1) discount",
+      "context_relevance": "Direct-answer passages / all passages in the complete retrieved context; equivalent to binary precision at context length",
+      "context_recall": "Developer-listed required facts with at least one linked passage retrieved / all listed required facts",
+      "rank_order": "The production retriever concatenates guideline top five, then drug-label top five; there is no cross-collection score merge"
+    }
+  },
+  "limitations": [
+    "Ten developer-authored known-passage queries were derived from the same 26-passages corpus being searched.",
+    "Relevance grades and required facts were not independently or clinically adjudicated.",
+    "Recall is bounded to judged passages in the pinned corpus, not all relevant medical literature.",
+    "The actual context order concatenates five guideline hits before five label hits; it is not a global score rank.",
+    "The probe does not evaluate textbook or graph retrieval, generated-answer faithfulness, or clinical decisions."
+  ]
+}

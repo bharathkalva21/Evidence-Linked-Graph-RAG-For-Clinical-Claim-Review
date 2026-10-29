@@ -1,0 +1,816 @@
+{
+  "snapshot_type": "exploratory_synthetic_diagnostic_pilot",
+  "clinical_validation": false,
+  "generated_from_run_utc": "2026-10-12T10:31:06.339138+00:00",
+  "dataset_file": "evaluation/cases.multidisease-pilot.v1.json",
+  "dataset_sha256": "0588cbe7cd4b2851215c2253805b2ce64c5c1193e579544fa9332ccefc42ebca",
+  "dataset_case_count": 12,
+  "source_manifest_sha256": "3ecb766b7dd00f233f50a8dcf481bfd0135d95add924ca3b852cbca7596d4667",
+  "run_git_sha": "a9134a2a0983c23726def88e3049e8c12ad77168",
+  "run_git_worktree_dirty": true,
+  "run_git_dirty_note": "Only an unrelated, untracked paper/figures directory was present; tracked evaluation files were committed before the run.",
+  "case_results_sha256": "69c36f45ccd6cc264c3dc6bbb622d4ebb95d6917963260c10200a90a829f7c88",
+  "metrics_sha256": "e1c11fcbaaad2e34a18a80eba229c40daecf10d102b76fe1ae5d14fe904fbec9",
+  "provider_consistency": {
+    "matched_case_ids": [
+      "mdp-htn-01",
+      "mdp-htn-03",
+      "mdp-asthma-01",
+      "mdp-asthma-02",
+      "mdp-asthma-03",
+      "mdp-t2d-01",
+      "mdp-t2d-02",
+      "mdp-gord-01",
+      "mdp-gord-02",
+      "mdp-gord-03"
+    ],
+    "mismatched_case_ids": [
+      "mdp-htn-02",
+      "mdp-t2d-03"
+    ],
+    "unknown_case_ids": [],
+    "interpretation": "Retrieval effects are confounded when synthesis providers differ across modes"
+  },
+  "per_mode": {
+    "llm_only": {
+      "completed": 12,
+      "attempted": 12,
+      "strata": {
+        "diseases": {
+          "chronic_asthma": {
+            "attempted": 3,
+            "complete": 3,
+            "failed": 0,
+            "top1": {
+              "numerator": 3,
+              "denominator": 3,
+              "value": 1.0,
+              "unavailable_reason": null,
+              "wilson_95": [
+                0.4385,
+                1.0
+              ]
+            },
+            "top3": {
+              "numerator": 3,
+              "denominator": 3,
+              "value": 1.0,
+              "unavailable_reason": null,
+              "wilson_95": [
+                0.4385,
+                1.0
+              ]
+            }
+          },
+          "gord": {
+            "attempted": 3,
+            "complete": 3,
+            "failed": 0,
+            "top1": {
+              "numerator": 3,
+              "denominator": 3,
+              "value": 1.0,
+              "unavailable_reason": null,
+              "wilson_95": [
+                0.4385,
+                1.0
+              ]
+            },
+            "top3": {
+              "numerator": 3,
+              "denominator": 3,
+              "value": 1.0,
+              "unavailable_reason": null,
+              "wilson_95": [
+                0.4385,
+                1.0
+              ]
+            }
+          },
+          "hypertension": {
+            "attempted": 3,
+            "complete": 3,
+            "failed": 0,
+            "top1": {
+              "numerator": 1,
+              "denominator": 3,
+              "value": 0.3333,
+              "unavailable_reason": null,
+              "wilson_95": [
+                0.0615,
+                0.7923
+              ]
+            },
+            "top3": {
+              "numerator": 1,
+              "denominator": 3,
+              "value": 0.3333,
+              "unavailable_reason": null,
+              "wilson_95": [
+                0.0615,
+                0.7923
+              ]
+            }
+          },
+          "type_2_diabetes": {
+            "attempted": 3,
+            "complete": 3,
+            "failed": 0,
+            "top1": {
+              "numerator": 3,
+              "denominator": 3,
+              "value": 1.0,
+              "unavailable_reason": null,
+              "wilson_95": [
+                0.4385,
+                1.0
+              ]
+            },
+            "top3": {
+              "numerator": 3,
+              "denominator": 3,
+              "value": 1.0,
+              "unavailable_reason": null,
+              "wilson_95": [
+                0.4385,
+                1.0
+              ]
+            }
+          }
+        },
+        "macro_top1": 0.8333,
+        "macro_top3": 0.8333,
+        "macro_unavailable_reason": null
+      },
+      "citation_identity": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "unavailable_reason": "No citation IDs emitted"
+      },
+      "claim_abstention": {
+        "numerator": 41,
+        "denominator": 41,
+        "value": 1.0,
+        "unavailable_reason": null
+      },
+      "latency_ms": {
+        "median": 4362.2,
+        "p95": 5697.6,
+        "max": 6281.2
+      },
+      "fusion_provider_counts": {
+        "Gemini Flash Lite": 12
+      },
+      "graph_candidates_total": 0,
+      "authoritative_passages_returned_total": 0,
+      "textbook_vector_items_returned_total": 0
+    },
+    "text_rag": {
+      "completed": 12,
+      "attempted": 12,
+      "strata": {
+        "diseases": {
+          "chronic_asthma": {
+            "attempted": 3,
+            "complete": 3,
+            "failed": 0,
+            "top1": {
+              "numerator": 2,
+              "denominator": 3,
+              "value": 0.6667,
+              "unavailable_reason": null,
+              "wilson_95": [
+                0.2077,
+                0.9385
+              ]
+            },
+            "top3": {
+              "numerator": 2,
+              "denominator": 3,
+              "value": 0.6667,
+              "unavailable_reason": null,
+              "wilson_95": [
+                0.2077,
+                0.9385
+              ]
+            }
+          },
+          "gord": {
+            "attempted": 3,
+            "complete": 3,
+            "failed": 0,
+            "top1": {
+              "numerator": 2,
+              "denominator": 3,
+              "value": 0.6667,
+              "unavailable_reason": null,
+              "wilson_95": [
+                0.2077,
+                0.9385
+              ]
+            },
+            "top3": {
+              "numerator": 2,
+              "denominator": 3,
+              "value": 0.6667,
+              "unavailable_reason": null,
+              "wilson_95": [
+                0.2077,
+                0.9385
+              ]
+            }
+          },
+          "hypertension": {
+            "attempted": 3,
+            "complete": 3,
+            "failed": 0,
+            "top1": {
+              "numerator": 2,
+              "denominator": 3,
+              "value": 0.6667,
+              "unavailable_reason": null,
+              "wilson_95": [
+                0.2077,
+                0.9385
+              ]
+            },
+            "top3": {
+              "numerator": 2,
+              "denominator": 3,
+              "value": 0.6667,
+              "unavailable_reason": null,
+              "wilson_95": [
+                0.2077,
+                0.9385
+              ]
+            }
+          },
+          "type_2_diabetes": {
+            "attempted": 3,
+            "complete": 3,
+            "failed": 0,
+            "top1": {
+              "numerator": 3,
+              "denominator": 3,
+              "value": 1.0,
+              "unavailable_reason": null,
+              "wilson_95": [
+                0.4385,
+                1.0
+              ]
+            },
+            "top3": {
+              "numerator": 3,
+              "denominator": 3,
+              "value": 1.0,
+              "unavailable_reason": null,
+              "wilson_95": [
+                0.4385,
+                1.0
+              ]
+            }
+          }
+        },
+        "macro_top1": 0.75,
+        "macro_top3": 0.75,
+        "macro_unavailable_reason": null
+      },
+      "citation_identity": {
+        "numerator": 30,
+        "denominator": 30,
+        "value": 1.0,
+        "unavailable_reason": null
+      },
+      "claim_abstention": {
+        "numerator": 34,
+        "denominator": 34,
+        "value": 1.0,
+        "unavailable_reason": null
+      },
+      "latency_ms": {
+        "median": 4682.6,
+        "p95": 39384.7,
+        "max": 80686.7
+      },
+      "fusion_provider_counts": {
+        "Gemini Flash Lite": 11,
+        "OpenRouter": 1
+      },
+      "graph_candidates_total": 0,
+      "authoritative_passages_returned_total": 120,
+      "textbook_vector_items_returned_total": 60
+    },
+    "graph_text": {
+      "completed": 12,
+      "attempted": 12,
+      "strata": {
+        "diseases": {
+          "chronic_asthma": {
+            "attempted": 3,
+            "complete": 3,
+            "failed": 0,
+            "top1": {
+              "numerator": 2,
+              "denominator": 3,
+              "value": 0.6667,
+              "unavailable_reason": null,
+              "wilson_95": [
+                0.2077,
+                0.9385
+              ]
+            },
+            "top3": {
+              "numerator": 2,
+              "denominator": 3,
+              "value": 0.6667,
+              "unavailable_reason": null,
+              "wilson_95": [
+                0.2077,
+                0.9385
+              ]
+            }
+          },
+          "gord": {
+            "attempted": 3,
+            "complete": 3,
+            "failed": 0,
+            "top1": {
+              "numerator": 3,
+              "denominator": 3,
+              "value": 1.0,
+              "unavailable_reason": null,
+              "wilson_95": [
+                0.4385,
+                1.0
+              ]
+            },
+            "top3": {
+              "numerator": 3,
+              "denominator": 3,
+              "value": 1.0,
+              "unavailable_reason": null,
+              "wilson_95": [
+                0.4385,
+                1.0
+              ]
+            }
+          },
+          "hypertension": {
+            "attempted": 3,
+            "complete": 3,
+            "failed": 0,
+            "top1": {
+              "numerator": 3,
+              "denominator": 3,
+              "value": 1.0,
+              "unavailable_reason": null,
+              "wilson_95": [
+                0.4385,
+                1.0
+              ]
+            },
+            "top3": {
+              "numerator": 3,
+              "denominator": 3,
+              "value": 1.0,
+              "unavailable_reason": null,
+              "wilson_95": [
+                0.4385,
+                1.0
+              ]
+            }
+          },
+          "type_2_diabetes": {
+            "attempted": 3,
+            "complete": 3,
+            "failed": 0,
+            "top1": {
+              "numerator": 2,
+              "denominator": 3,
+              "value": 0.6667,
+              "unavailable_reason": null,
+              "wilson_95": [
+                0.2077,
+                0.9385
+              ]
+            },
+            "top3": {
+              "numerator": 2,
+              "denominator": 3,
+              "value": 0.6667,
+              "unavailable_reason": null,
+              "wilson_95": [
+                0.2077,
+                0.9385
+              ]
+            }
+          }
+        },
+        "macro_top1": 0.8334,
+        "macro_top3": 0.8334,
+        "macro_unavailable_reason": null
+      },
+      "citation_identity": {
+        "numerator": 26,
+        "denominator": 26,
+        "value": 1.0,
+        "unavailable_reason": null
+      },
+      "claim_abstention": {
+        "numerator": 22,
+        "denominator": 22,
+        "value": 1.0,
+        "unavailable_reason": null
+      },
+      "latency_ms": {
+        "median": 4257.1,
+        "p95": 19630.8,
+        "max": 36732.3
+      },
+      "fusion_provider_counts": {
+        "Gemini Flash Lite": 11,
+        "Cohere": 1
+      },
+      "graph_candidates_total": 0,
+      "authoritative_passages_returned_total": 120,
+      "textbook_vector_items_returned_total": 60
+    }
+  },
+  "case_outputs": [
+    {
+      "case_id": "mdp-htn-01",
+      "disease_stratum": "hypertension",
+      "mode": "llm_only",
+      "status": "ok",
+      "rank1_text": "Stage 2 Hypertension",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-htn-02",
+      "disease_stratum": "hypertension",
+      "mode": "llm_only",
+      "status": "ok",
+      "rank1_text": "Stage 2 Hypertension",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-htn-03",
+      "disease_stratum": "hypertension",
+      "mode": "llm_only",
+      "status": "ok",
+      "rank1_text": "Essential hypertension",
+      "ranked_count": 2,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-asthma-01",
+      "disease_stratum": "chronic_asthma",
+      "mode": "llm_only",
+      "status": "ok",
+      "rank1_text": "Asthma",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-asthma-02",
+      "disease_stratum": "chronic_asthma",
+      "mode": "llm_only",
+      "status": "ok",
+      "rank1_text": "Asthma",
+      "ranked_count": 2,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-asthma-03",
+      "disease_stratum": "chronic_asthma",
+      "mode": "llm_only",
+      "status": "ok",
+      "rank1_text": "Asthma",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-t2d-01",
+      "disease_stratum": "type_2_diabetes",
+      "mode": "llm_only",
+      "status": "ok",
+      "rank1_text": "Type 2 Diabetes Mellitus",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-t2d-02",
+      "disease_stratum": "type_2_diabetes",
+      "mode": "llm_only",
+      "status": "ok",
+      "rank1_text": "Type 2 Diabetes Mellitus",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-t2d-03",
+      "disease_stratum": "type_2_diabetes",
+      "mode": "llm_only",
+      "status": "ok",
+      "rank1_text": "Type 2 Diabetes Mellitus",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-gord-01",
+      "disease_stratum": "gord",
+      "mode": "llm_only",
+      "status": "ok",
+      "rank1_text": "Gastroesophageal reflux disease",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-gord-02",
+      "disease_stratum": "gord",
+      "mode": "llm_only",
+      "status": "ok",
+      "rank1_text": "Gastroesophageal reflux disease",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-gord-03",
+      "disease_stratum": "gord",
+      "mode": "llm_only",
+      "status": "ok",
+      "rank1_text": "Gastroesophageal Reflux Disease",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-htn-01",
+      "disease_stratum": "hypertension",
+      "mode": "text_rag",
+      "status": "ok",
+      "rank1_text": "Hypertension",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-htn-02",
+      "disease_stratum": "hypertension",
+      "mode": "text_rag",
+      "status": "ok",
+      "rank1_text": "Stage 1 hypertension (candidate, pending confirmation)",
+      "ranked_count": 1,
+      "fusion_provider": "OpenRouter",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-htn-03",
+      "disease_stratum": "hypertension",
+      "mode": "text_rag",
+      "status": "ok",
+      "rank1_text": "Hypertension",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-asthma-01",
+      "disease_stratum": "chronic_asthma",
+      "mode": "text_rag",
+      "status": "ok",
+      "rank1_text": "Reversible airflow obstruction",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-asthma-02",
+      "disease_stratum": "chronic_asthma",
+      "mode": "text_rag",
+      "status": "ok",
+      "rank1_text": "Asthma",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-asthma-03",
+      "disease_stratum": "chronic_asthma",
+      "mode": "text_rag",
+      "status": "ok",
+      "rank1_text": "Asthma",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-t2d-01",
+      "disease_stratum": "type_2_diabetes",
+      "mode": "text_rag",
+      "status": "ok",
+      "rank1_text": "Type 2 Diabetes Mellitus",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-t2d-02",
+      "disease_stratum": "type_2_diabetes",
+      "mode": "text_rag",
+      "status": "ok",
+      "rank1_text": "Type 2 Diabetes Mellitus",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-t2d-03",
+      "disease_stratum": "type_2_diabetes",
+      "mode": "text_rag",
+      "status": "ok",
+      "rank1_text": "Type 2 Diabetes Mellitus",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-gord-01",
+      "disease_stratum": "gord",
+      "mode": "text_rag",
+      "status": "ok",
+      "rank1_text": "Gastroesophageal Reflux Disease",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-gord-02",
+      "disease_stratum": "gord",
+      "mode": "text_rag",
+      "status": "ok",
+      "rank1_text": null,
+      "ranked_count": 0,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-gord-03",
+      "disease_stratum": "gord",
+      "mode": "text_rag",
+      "status": "ok",
+      "rank1_text": "Gastroesophageal Reflux Disease",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-htn-01",
+      "disease_stratum": "hypertension",
+      "mode": "graph_text",
+      "status": "ok",
+      "rank1_text": "Hypertension",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-htn-02",
+      "disease_stratum": "hypertension",
+      "mode": "graph_text",
+      "status": "ok",
+      "rank1_text": "Hypertension",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-htn-03",
+      "disease_stratum": "hypertension",
+      "mode": "graph_text",
+      "status": "ok",
+      "rank1_text": "Hypertension",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-asthma-01",
+      "disease_stratum": "chronic_asthma",
+      "mode": "graph_text",
+      "status": "ok",
+      "rank1_text": "Reversible airflow obstruction",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-asthma-02",
+      "disease_stratum": "chronic_asthma",
+      "mode": "graph_text",
+      "status": "ok",
+      "rank1_text": "Asthma",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-asthma-03",
+      "disease_stratum": "chronic_asthma",
+      "mode": "graph_text",
+      "status": "ok",
+      "rank1_text": "Asthma",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-t2d-01",
+      "disease_stratum": "type_2_diabetes",
+      "mode": "graph_text",
+      "status": "ok",
+      "rank1_text": "Type 2 Diabetes Mellitus",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-t2d-02",
+      "disease_stratum": "type_2_diabetes",
+      "mode": "graph_text",
+      "status": "ok",
+      "rank1_text": "Type 2 Diabetes Mellitus",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-t2d-03",
+      "disease_stratum": "type_2_diabetes",
+      "mode": "graph_text",
+      "status": "ok",
+      "rank1_text": null,
+      "ranked_count": 0,
+      "fusion_provider": "Cohere",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-gord-01",
+      "disease_stratum": "gord",
+      "mode": "graph_text",
+      "status": "ok",
+      "rank1_text": "Gastroesophageal Reflux Disease",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-gord-02",
+      "disease_stratum": "gord",
+      "mode": "graph_text",
+      "status": "ok",
+      "rank1_text": "Gastroesophageal reflux disease",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    },
+    {
+      "case_id": "mdp-gord-03",
+      "disease_stratum": "gord",
+      "mode": "graph_text",
+      "status": "ok",
+      "rank1_text": "Gastroesophageal Reflux Disease",
+      "ranked_count": 1,
+      "fusion_provider": "Gemini Flash Lite",
+      "graph_candidates": 0
+    }
+  ],
+  "unavailable_metrics": [
+    "clinician-adjudicated diagnosis accuracy",
+    "semantic citation support",
+    "treatment safety",
+    "warning sensitivity (no positive warning cases)",
+    "retrieval Hit@k/Recall@k (no independently labeled relevant passages)"
+  ],
+  "interpretation": "Exact normalized alias matching against provisional author-intended synthetic labels only. No causal graph effect or clinical performance inferred.",
+  "local_graph_audit": {
+    "node_count": 14467,
+    "edge_count": 649815,
+    "phenotype_relation_count": 0,
+    "audit_note": "Read-only Neo4j counts taken after the pilot run; the local graph index is not version-pinned in Git."
+  }
+}

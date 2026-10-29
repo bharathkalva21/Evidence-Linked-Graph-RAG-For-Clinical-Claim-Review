@@ -1,0 +1,127 @@
+{
+  "dataset_id": "pinned-source-known-passage-probes",
+  "dataset_version": "1.0.0",
+  "annotation_status": "Developer-authored source-section relevance and fact labels; no independent clinician adjudication",
+  "source_manifest_sha256": "3ecb766b7dd00f233f50a8dcf481bfd0135d95add924ca3b852cbca7596d4667",
+  "scope": "The 26 locally pinned NICE NG136 and DailyMed amlodipine passages only",
+  "selection_note": "Queries and judgments frozen before running the retriever; each query targets a known source question, so this is an engineering retrieval probe, not a clinical-case sample",
+  "grading": "2 directly answers the query; 1 related but insufficient; all unlisted passages have grade 0. Binary relevance for P/Recall/Hit/MRR requires grade 2.",
+  "top_k_per_collection": 5,
+  "ks": [1, 3, 5, 10],
+  "queries": [
+    {
+      "query_id": "ng136-bp-measurement",
+      "query": "For an adult with clinic blood pressure at least 140/90 mmHg, what repeat clinic measurements and waking-hour ABPM sampling are specified for hypertension assessment?",
+      "grades": {
+        "NG136::Recommendation 1.2.2": 2,
+        "NG136::Recommendation 1.2.6": 2,
+        "NG136::Recommendation 1.2.1": 1
+      },
+      "required_facts": {
+        "repeat_clinic_measurement": ["NG136::Recommendation 1.2.2"],
+        "abpm_waking_hour_sampling": ["NG136::Recommendation 1.2.6"]
+      }
+    },
+    {
+      "query_id": "ng136-stage2-treatment",
+      "query": "For an adult with persistent stage 2 hypertension, what drug-treatment offer accompanies lifestyle advice, and what risk and treatment-preference discussion should precede treatment?",
+      "grades": {
+        "NG136::Recommendation 1.4.9": 2,
+        "NG136::Recommendation 1.4.11": 2,
+        "NG136::Recommendation 1.4.10": 1
+      },
+      "required_facts": {
+        "stage2_drug_plus_lifestyle_offer": ["NG136::Recommendation 1.4.9"],
+        "risk_and_preference_discussion": ["NG136::Recommendation 1.4.11"]
+      }
+    },
+    {
+      "query_id": "ng136-diabetes-step1",
+      "query": "For an adult with type 2 diabetes starting step 1 treatment for hypertension, which drug classes does NICE NG136 offer?",
+      "grades": {
+        "NG136::Recommendation 1.4.32": 2,
+        "NG136::Recommendation 1.4.33": 1
+      },
+      "required_facts": {
+        "diabetes_step1_ace_or_arb": ["NG136::Recommendation 1.4.32"]
+      }
+    },
+    {
+      "query_id": "ng136-age55-step1",
+      "query": "For an adult aged 55 or older without type 2 diabetes starting step 1 antihypertensive treatment, which drug class is offered?",
+      "grades": {
+        "NG136::Recommendation 1.4.35": 2,
+        "NG136::Recommendation 1.4.36": 1
+      },
+      "required_facts": {
+        "age55_step1_ccb": ["NG136::Recommendation 1.4.35"]
+      }
+    },
+    {
+      "query_id": "ng136-ccb-oedema",
+      "query": "If a calcium-channel blocker is not tolerated because of oedema during hypertension treatment, which alternative drug class is offered?",
+      "grades": {
+        "NG136::Recommendation 1.4.36": 2,
+        "NG136::Recommendation 1.4.35": 1
+      },
+      "required_facts": {
+        "ccb_intolerance_thiazide_like_option": ["NG136::Recommendation 1.4.36"]
+      }
+    },
+    {
+      "query_id": "ng136-ace-arb-combination",
+      "query": "Does NICE NG136 permit combining an ACE inhibitor and an ARB to treat hypertension?",
+      "grades": {
+        "NG136::Recommendation 1.4.34": 2,
+        "NG136::Recommendation 1.4.33": 1
+      },
+      "required_facts": {
+        "ace_arb_combination_rule": ["NG136::Recommendation 1.4.34"]
+      }
+    },
+    {
+      "query_id": "amlodipine-sensitivity",
+      "query": "What does the amlodipine label say about known sensitivity to amlodipine as a contraindication?",
+      "grades": {
+        "SPL-0c5784b9-5542-144f-e063-6394a90a7ebc::4 CONTRAINDICATIONS / 4 CONTRAINDICATIONS": 2
+      },
+      "required_facts": {
+        "known_amlodipine_sensitivity_contraindication": ["SPL-0c5784b9-5542-144f-e063-6394a90a7ebc::4 CONTRAINDICATIONS / 4 CONTRAINDICATIONS"]
+      }
+    },
+    {
+      "query_id": "amlodipine-simvastatin",
+      "query": "What amlodipine and simvastatin interaction and simvastatin daily-dose limit are stated in the amlodipine label?",
+      "grades": {
+        "SPL-0c5784b9-5542-144f-e063-6394a90a7ebc::7 DRUG INTERACTIONS / 7.2 Impact of Amlodipine on Other Drugs": 2,
+        "SPL-0c5784b9-5542-144f-e063-6394a90a7ebc::7 DRUG INTERACTIONS / 7.1 Impact of Other Drugs on Amlodipine": 1
+      },
+      "required_facts": {
+        "simvastatin_exposure_interaction": ["SPL-0c5784b9-5542-144f-e063-6394a90a7ebc::7 DRUG INTERACTIONS / 7.2 Impact of Amlodipine on Other Drugs"],
+        "simvastatin_dose_limit": ["SPL-0c5784b9-5542-144f-e063-6394a90a7ebc::7 DRUG INTERACTIONS / 7.2 Impact of Amlodipine on Other Drugs"]
+      }
+    },
+    {
+      "query_id": "amlodipine-hepatic-failure",
+      "query": "What does the amlodipine label say about dosing in severe hepatic impairment and slow titration?",
+      "grades": {
+        "SPL-0c5784b9-5542-144f-e063-6394a90a7ebc::5 WARNINGS AND PRECAUTIONS / 5.3 Patients with Hepatic Failure": 2,
+        "SPL-0c5784b9-5542-144f-e063-6394a90a7ebc::5 WARNINGS AND PRECAUTIONS / 5.1 Hypotension": 1
+      },
+      "required_facts": {
+        "severe_hepatic_impairment_titration": ["SPL-0c5784b9-5542-144f-e063-6394a90a7ebc::5 WARNINGS AND PRECAUTIONS / 5.3 Patients with Hepatic Failure"]
+      }
+    },
+    {
+      "query_id": "amlodipine-aortic-stenosis",
+      "query": "What hypotension warning does the amlodipine label give for patients with severe aortic stenosis?",
+      "grades": {
+        "SPL-0c5784b9-5542-144f-e063-6394a90a7ebc::5 WARNINGS AND PRECAUTIONS / 5.1 Hypotension": 2,
+        "SPL-0c5784b9-5542-144f-e063-6394a90a7ebc::5 WARNINGS AND PRECAUTIONS / 5.2 Increased Angina or Myocardial Infarction": 1
+      },
+      "required_facts": {
+        "severe_aortic_stenosis_hypotension_warning": ["SPL-0c5784b9-5542-144f-e063-6394a90a7ebc::5 WARNINGS AND PRECAUTIONS / 5.1 Hypotension"]
+      }
+    }
+  ]
+}

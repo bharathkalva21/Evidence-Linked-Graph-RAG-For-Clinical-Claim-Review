@@ -1,0 +1,33 @@
+.env
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+*.pyc
+
+datasets/*
+!datasets/DATASET_GUIDE.md
+
+vector_db/
+qdrant_storage/
+neo4j/data/
+neo4j/logs/
+*.sqlite
+*.db
+*.pkl
+*.faiss
+*.parquet
+*.csv
+*.tsv
+*.gz
+data/processed/
+artifacts/
+evaluation/runs/
+
+# Local logs, credentials, and large reference binaries.
+API keys for Evidence based Scanner.md
+eval_out.txt
+test_out.txt
+archive/reference/*.pdf
+archive/reference/*.zip

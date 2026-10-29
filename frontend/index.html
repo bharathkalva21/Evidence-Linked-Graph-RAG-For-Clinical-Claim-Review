@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDSS Clinical Reasoning</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=claim-step-7-ui-fix-1">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar for Context -->
+        <aside class="sidebar glass-panel">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <h2>NeuroMed AI</h2>
+            </div>
+            
+            <div class="context-panel">
+                <h3>Patient Context</h3>
+                <div id="patient-context" class="empty-state">
+                    Submit a case to view extracted patient context.
+                </div>
+            </div>
+            
+            <div class="context-panel">
+                <h3>Missing Information</h3>
+                <ul id="missing-info-list" class="empty-state-list">
+                    <li>No missing info yet.</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header>
+                <h1>Clinical Decision Support System</h1>
+                <p>Enter a clinical case to generate an AI-assisted differential diagnosis</p>
+            </header>
+
+            <section class="input-section glass-panel">
+                <form id="analyze-form">
+                    <textarea 
+                        id="case-input" 
+                        placeholder="e.g., 58-year-old man presents with sharp, crushing chest pain radiating to the left arm for the past 2 hours. He has a history of type 2 diabetes and hypertension. He is currently taking lisinopril and metformin. Vitals: BP 160/90, HR 110, SpO2 96% on room air." 
+                        required
+                    ></textarea>
+                    <div class="form-actions">
+                        <button type="submit" id="submit-btn" class="glow-btn">
+                            <span class="btn-text">Analyze Case</span>
+                            <div class="spinner hidden" id="loading-spinner"></div>
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <div id="ui-error" class="ui-error hidden" role="alert"></div>
+
+            <section class="results-section hidden" id="results-section">
+                <div class="results-header">
+                    <h2>Clinical review</h2>
+                    <span class="review-label">For clinician review</span>
+                </div>
+
+                <section class="review-section glass-panel" aria-labelledby="case-summary-heading">
+                    <h3 id="case-summary-heading">Case summary</h3>
+                    <p id="case-summary"></p>
+                    <p id="evidence-overview" class="review-muted"></p>
+                </section>
+
+                <section class="review-section" aria-labelledby="differential-heading">
+                    <h3 id="differential-heading">Ranked differential</h3>
+                    <p class="review-muted">Ranks are model suggestions. No diagnostic probability has been calibrated.</p>
+                    <div id="diagnoses-container" class="diagnoses-grid"></div>
+                </section>
+
+                <section class="review-section" aria-labelledby="investigations-heading">
+                    <h3 id="investigations-heading">Investigations to consider</h3>
+                    <div id="investigations-list" class="claim-list"></div>
+                </section>
+
+                <section class="review-section" aria-labelledby="treatments-heading">
+                    <h3 id="treatments-heading">Treatment options if confirmed</h3>
+                    <p class="review-muted">Options remain conditional until the diagnosis and patient-specific checks are reviewed.</p>
+                    <div id="treatments-list" class="claim-list"></div>
+                </section>
+
+                <section class="review-section glass-panel" aria-labelledby="safety-heading">
+                    <h3 id="safety-heading">Medication safety</h3>
+                    <div id="medication-safety"></div>
+                </section>
+
+                <section class="review-section" aria-labelledby="limitations-heading">
+                    <h3 id="limitations-heading">Limitations and verification gaps</h3>
+                    <div id="limitations-list"></div>
+                </section>
+
+                <div class="disclaimer mt-4">
+                    <strong>Disclaimer:</strong> <span id="report-disclaimer">This is a research prototype.</span>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js?v=claim-step-7-ui-fix-1"></script>
+</body>
+</html>

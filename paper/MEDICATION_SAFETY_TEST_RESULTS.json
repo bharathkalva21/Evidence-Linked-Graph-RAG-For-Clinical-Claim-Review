@@ -1,0 +1,290 @@
+{
+  "test": "A: synthetic amlodipine medication-safety challenge",
+  "clinical_validation": false,
+  "label_status": "Developer-authored before execution; independent clinician review pending",
+  "case_sha256": "ed00878d7a5a62377e525f51794f46ac35389cfdf120526935d31a554f126992",
+  "source_manifest_sha256": "3ecb766b7dd00f233f50a8dcf481bfd0135d95add924ca3b852cbca7596d4667",
+  "git": {
+    "sha": "701ec7175f7414ce33f621f5c2fc9e4a88a19a6e",
+    "dirty": false
+  },
+  "run_created_utc": "2026-10-13T17:45:40.291933+00:00",
+  "paths": {
+    "structured": {
+      "case_count": 108,
+      "warning_precision": {
+        "numerator": 72,
+        "denominator": 72,
+        "value": 1.0,
+        "wilson_95": [
+          0.9493,
+          1.0
+        ]
+      },
+      "warning_recall": {
+        "numerator": 72,
+        "denominator": 72,
+        "value": 1.0,
+        "wilson_95": [
+          0.9493,
+          1.0
+        ]
+      },
+      "false_support_rate": {
+        "numerator": 0,
+        "denominator": 168,
+        "value": 0.0,
+        "wilson_95": [
+          0.0,
+          0.0224
+        ]
+      },
+      "unknown_allergy_abstention": {
+        "numerator": 24,
+        "denominator": 24,
+        "value": 1.0,
+        "wilson_95": [
+          0.862,
+          1.0
+        ]
+      },
+      "allergy_status_match": {
+        "numerator": 108,
+        "denominator": 108,
+        "value": 1.0,
+        "wilson_95": [
+          0.9657,
+          1.0
+        ]
+      },
+      "medication_status_match": {
+        "numerator": 108,
+        "denominator": 108,
+        "value": 1.0,
+        "wilson_95": [
+          0.9657,
+          1.0
+        ]
+      },
+      "current_medication_match": {
+        "numerator": 108,
+        "denominator": 108,
+        "value": 1.0,
+        "wilson_95": [
+          0.9657,
+          1.0
+        ]
+      },
+      "treatment_conflict_match": {
+        "numerator": 108,
+        "denominator": 108,
+        "value": 1.0,
+        "wilson_95": [
+          0.9657,
+          1.0
+        ]
+      },
+      "strata": {
+        "amlodipine_allergy": {
+          "cases": 12,
+          "exact_warning_and_support_cases": 12,
+          "missed_warning_events": 0,
+          "unexpected_warning_events": 0
+        },
+        "both_warnings": {
+          "cases": 12,
+          "exact_warning_and_support_cases": 12,
+          "missed_warning_events": 0,
+          "unexpected_warning_events": 0
+        },
+        "clean_negative": {
+          "cases": 12,
+          "exact_warning_and_support_cases": 12,
+          "missed_warning_events": 0,
+          "unexpected_warning_events": 0
+        },
+        "conflicting_allergy": {
+          "cases": 12,
+          "exact_warning_and_support_cases": 12,
+          "missed_warning_events": 0,
+          "unexpected_warning_events": 0
+        },
+        "different_drug_allergy": {
+          "cases": 12,
+          "exact_warning_and_support_cases": 12,
+          "missed_warning_events": 0,
+          "unexpected_warning_events": 0
+        },
+        "lookalike_names": {
+          "cases": 12,
+          "exact_warning_and_support_cases": 12,
+          "missed_warning_events": 0,
+          "unexpected_warning_events": 0
+        },
+        "simvastatin_interaction": {
+          "cases": 12,
+          "exact_warning_and_support_cases": 12,
+          "missed_warning_events": 0,
+          "unexpected_warning_events": 0
+        },
+        "stopped_simvastatin": {
+          "cases": 12,
+          "exact_warning_and_support_cases": 12,
+          "missed_warning_events": 0,
+          "unexpected_warning_events": 0
+        },
+        "unknown_allergy": {
+          "cases": 12,
+          "exact_warning_and_support_cases": 12,
+          "missed_warning_events": 0,
+          "unexpected_warning_events": 0
+        }
+      },
+      "failure_case_ids": []
+    },
+    "text_extractor": {
+      "case_count": 108,
+      "warning_precision": {
+        "numerator": 68,
+        "denominator": 68,
+        "value": 1.0,
+        "wilson_95": [
+          0.9465,
+          1.0
+        ]
+      },
+      "warning_recall": {
+        "numerator": 68,
+        "denominator": 72,
+        "value": 0.9444,
+        "wilson_95": [
+          0.8657,
+          0.9782
+        ]
+      },
+      "false_support_rate": {
+        "numerator": 0,
+        "denominator": 168,
+        "value": 0.0,
+        "wilson_95": [
+          0.0,
+          0.0224
+        ]
+      },
+      "unknown_allergy_abstention": {
+        "numerator": 20,
+        "denominator": 24,
+        "value": 0.8333,
+        "wilson_95": [
+          0.6415,
+          0.9332
+        ]
+      },
+      "allergy_status_match": {
+        "numerator": 104,
+        "denominator": 108,
+        "value": 0.963,
+        "wilson_95": [
+          0.9086,
+          0.9855
+        ]
+      },
+      "medication_status_match": {
+        "numerator": 108,
+        "denominator": 108,
+        "value": 1.0,
+        "wilson_95": [
+          0.9657,
+          1.0
+        ]
+      },
+      "current_medication_match": {
+        "numerator": 108,
+        "denominator": 108,
+        "value": 1.0,
+        "wilson_95": [
+          0.9657,
+          1.0
+        ]
+      },
+      "treatment_conflict_match": {
+        "numerator": 108,
+        "denominator": 108,
+        "value": 1.0,
+        "wilson_95": [
+          0.9657,
+          1.0
+        ]
+      },
+      "strata": {
+        "amlodipine_allergy": {
+          "cases": 12,
+          "exact_warning_and_support_cases": 12,
+          "missed_warning_events": 0,
+          "unexpected_warning_events": 0
+        },
+        "both_warnings": {
+          "cases": 12,
+          "exact_warning_and_support_cases": 12,
+          "missed_warning_events": 0,
+          "unexpected_warning_events": 0
+        },
+        "clean_negative": {
+          "cases": 12,
+          "exact_warning_and_support_cases": 12,
+          "missed_warning_events": 0,
+          "unexpected_warning_events": 0
+        },
+        "conflicting_allergy": {
+          "cases": 12,
+          "exact_warning_and_support_cases": 12,
+          "missed_warning_events": 0,
+          "unexpected_warning_events": 0
+        },
+        "different_drug_allergy": {
+          "cases": 12,
+          "exact_warning_and_support_cases": 12,
+          "missed_warning_events": 0,
+          "unexpected_warning_events": 0
+        },
+        "lookalike_names": {
+          "cases": 12,
+          "exact_warning_and_support_cases": 12,
+          "missed_warning_events": 0,
+          "unexpected_warning_events": 0
+        },
+        "simvastatin_interaction": {
+          "cases": 12,
+          "exact_warning_and_support_cases": 12,
+          "missed_warning_events": 0,
+          "unexpected_warning_events": 0
+        },
+        "stopped_simvastatin": {
+          "cases": 12,
+          "exact_warning_and_support_cases": 12,
+          "missed_warning_events": 0,
+          "unexpected_warning_events": 0
+        },
+        "unknown_allergy": {
+          "cases": 12,
+          "exact_warning_and_support_cases": 8,
+          "missed_warning_events": 4,
+          "unexpected_warning_events": 0
+        }
+      },
+      "failure_case_ids": [
+        "medsafe-unknown_allergy-03",
+        "medsafe-unknown_allergy-06",
+        "medsafe-unknown_allergy-09",
+        "medsafe-unknown_allergy-12"
+      ]
+    }
+  },
+  "limits": [
+    "Fixed amlodipine proposal; no LLM generation or live source retrieval",
+    "Text path runs deterministic safety-fact extractor with empty model hints, not /analyze",
+    "Developer-authored labels from the same narrow label/rule scope; clinician review pending",
+    "Wilson intervals describe this constructed challenge set, not patient prevalence or clinical safety"
+  ],
+  "records_sha256": "aa0b660e8d5b429079a689611e584fc12c2390970b5de64b3d1b07c42c8ba865"
+}

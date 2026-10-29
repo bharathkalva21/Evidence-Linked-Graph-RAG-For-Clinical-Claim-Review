@@ -1,0 +1,47 @@
+{
+  "clinical_area": "Adult hypertension: diagnosis and initial drug treatment",
+  "manifest_version": "1",
+  "review_status": "Pending independent clinician review",
+  "sources": [
+    {
+      "source_type": "guideline",
+      "source_name": "NICE NG136 recommendations",
+      "publisher": "National Institute for Health and Care Excellence",
+      "document_id": "NG136",
+      "document_version": "2026-02-26",
+      "title": "Hypertension in adults: diagnosis and management",
+      "document_date": "2019-08-28",
+      "updated_date": "2026-02-26",
+      "url": "https://www.nice.org.uk/guidance/ng136/chapter/Recommendations",
+      "canonical_url": "https://www.nice.org.uk/guidance/ng136",
+      "jurisdiction": "England",
+      "reuse_terms": "NICE notice of rights: https://www.nice.org.uk/terms-and-conditions#notice-of-rights; raw source retained locally, not redistributed in Git",
+      "clinical_scope": "Adult hypertension diagnosis and initial treatment; excludes pregnancy",
+      "retired": false,
+      "local_path": "datasets/authoritative/hypertension/nice-ng136-recommendations.html",
+      "sha256": "68ce72f3487ffa4715f92ddfa8aaf6e093f5aecd3598cd59a0ab58f74ce86f28",
+      "format": "nice_recommendations_html",
+      "sections": ["1.2.1", "1.2.2", "1.2.5", "1.2.6", "1.4.9", "1.4.10", "1.4.11", "1.4.12", "1.4.13", "1.4.14", "1.4.32", "1.4.33", "1.4.34", "1.4.35", "1.4.36", "1.4.37", "1.4.38"]
+    },
+    {
+      "source_type": "drug_label",
+      "source_name": "DailyMed amlodipine besylate tablets label",
+      "publisher": "Northwind Health Company, LLC (labeler); U.S. National Library of Medicine (DailyMed host)",
+      "document_id": "SPL-0c5784b9-5542-144f-e063-6394a90a7ebc",
+      "document_version": "2",
+      "title": "Amlodipine besylate tablets prescribing information",
+      "document_date": "2026-01-01",
+      "updated_date": "2026-01-01",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=0c5784b9-5542-144f-e063-6394a90a7ebc",
+      "download_url": "https://dailymed.nlm.nih.gov/dailymed/services/v2/spls/0c5784b9-5542-144f-e063-6394a90a7ebc.xml",
+      "jurisdiction": "United States",
+      "reuse_terms": "Official DailyMed SPL distribution; labeler-origin text retained locally; verify reuse terms before redistribution",
+      "clinical_scope": "Amlodipine label sections relevant to hypertension, contraindications, warnings, and interactions",
+      "retired": false,
+      "local_path": "datasets/authoritative/hypertension/dailymed-amlodipine-0c5784b9-v2.xml",
+      "sha256": "1afca7e7cac8b829493ecc19bf96438ede0185d9f19de93878ba9134f478a929",
+      "format": "dailymed_spl_xml",
+      "sections": ["1 INDICATIONS AND USAGE", "4 CONTRAINDICATIONS", "5 WARNINGS AND PRECAUTIONS", "7 DRUG INTERACTIONS"]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Aggregate engineering counters copied from evaluation/runs/step8-full-synthetic-rescored on 2026-10-07; no clinical adjudication",
+  "source_run_kind": "replay",
+  "source_git_sha": "02e4d343714efda0668088a5236ed917782ab01d",
+  "source_run_worktree_dirty": true,
+  "dataset_version": "1.0.0",
+  "dataset_sha256": "65c6294006062bd79d5ab5c9f95fc5ccb238975d72ec75df36b89d4a47cdb5b7",
+  "source_manifest_sha256": "3ecb766b7dd00f233f50a8dcf481bfd0135d95add924ca3b852cbca7596d4667",
+  "clinical_validation": false,
+  "reviewed_item_count": 0,
+  "provider_consistency": {
+    "matched_cases": 3,
+    "mismatched_cases": 2,
+    "unknown_cases": 1
+  },
+  "modes": {
+    "llm_only": {"completed": 6, "top1": [1, 6], "top3": [1, 6], "citation_identity": [0, 0], "warning_type": [2, 3], "supported_label_warning": [0, 2], "unverified_claims": [14, 14]},
+    "text_rag": {"completed": 6, "top1": [4, 6], "top3": [4, 6], "citation_identity": [13, 13], "warning_type": [2, 3], "supported_label_warning": [1, 2], "unverified_claims": [11, 12]},
+    "graph_text": {"completed": 6, "top1": [5, 6], "top3": [6, 6], "citation_identity": [17, 17], "warning_type": [2, 3], "supported_label_warning": [1, 2], "unverified_claims": [17, 18]}
+  },
+  "unavailable_metrics": ["claim_support_accuracy", "unsupported_claim_rate", "unsafe_option_rate"],
+  "interpretation": "Diagnoses were explicit in case text; provider fallback confounded retrieval comparisons; citation identity does not establish claim correctness."
+}

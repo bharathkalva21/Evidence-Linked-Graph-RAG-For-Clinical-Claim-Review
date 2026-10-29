@@ -1,0 +1,2324 @@
+{
+  "dataset_id": "medication-safety-amlodipine-synthetic",
+  "dataset_version": "1.0.0",
+  "case_count": 108,
+  "label_status": "Developer-authored before execution; independent clinician review pending",
+  "scope": "Proposed amlodipine; pinned label rules for sensitivity and current simvastatin only",
+  "groups": {
+    "amlodipine_allergy": 12,
+    "simvastatin_interaction": 12,
+    "both_warnings": 12,
+    "unknown_allergy": 12,
+    "conflicting_allergy": 12,
+    "different_drug_allergy": 12,
+    "stopped_simvastatin": 12,
+    "lookalike_names": 12,
+    "clean_negative": 12
+  },
+  "cases": [
+    {
+      "case_id": "medsafe-amlodipine_allergy-01",
+      "stratum": "amlodipine_allergy",
+      "case_text": "A 45-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergic to amlodipine. No current medications.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "amlodipine_allergy"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_allergy"
+      ],
+      "expected_treatment_conflict": true
+    },
+    {
+      "case_id": "medsafe-amlodipine_allergy-02",
+      "stratum": "amlodipine_allergy",
+      "case_text": "A 46-year-old adult has confirmed hypertension. Amlodipine is being considered. Takes no medications. Allergy to amlodipine.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "amlodipine_allergy"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_allergy"
+      ],
+      "expected_treatment_conflict": true
+    },
+    {
+      "case_id": "medsafe-amlodipine_allergy-03",
+      "stratum": "amlodipine_allergy",
+      "case_text": "A 47-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergies: amlodipine. Medications: none.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "amlodipine_allergy"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_allergy"
+      ],
+      "expected_treatment_conflict": true
+    },
+    {
+      "case_id": "medsafe-amlodipine_allergy-04",
+      "stratum": "amlodipine_allergy",
+      "case_text": "A 48-year-old adult has confirmed hypertension. Amlodipine is being considered. No current medications. Amlodipine allergy.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "amlodipine_allergy"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_allergy"
+      ],
+      "expected_treatment_conflict": true
+    },
+    {
+      "case_id": "medsafe-amlodipine_allergy-05",
+      "stratum": "amlodipine_allergy",
+      "case_text": "A 49-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergic to amlodipine. Takes no medications.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "amlodipine_allergy"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_allergy"
+      ],
+      "expected_treatment_conflict": true
+    },
+    {
+      "case_id": "medsafe-amlodipine_allergy-06",
+      "stratum": "amlodipine_allergy",
+      "case_text": "A 50-year-old adult has confirmed hypertension. Amlodipine is being considered. Medications: none. Allergy to amlodipine.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "amlodipine_allergy"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_allergy"
+      ],
+      "expected_treatment_conflict": true
+    },
+    {
+      "case_id": "medsafe-amlodipine_allergy-07",
+      "stratum": "amlodipine_allergy",
+      "case_text": "A 51-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergies: amlodipine. No current medications.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "amlodipine_allergy"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_allergy"
+      ],
+      "expected_treatment_conflict": true
+    },
+    {
+      "case_id": "medsafe-amlodipine_allergy-08",
+      "stratum": "amlodipine_allergy",
+      "case_text": "A 52-year-old adult has confirmed hypertension. Amlodipine is being considered. Takes no medications. Amlodipine allergy.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "amlodipine_allergy"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_allergy"
+      ],
+      "expected_treatment_conflict": true
+    },
+    {
+      "case_id": "medsafe-amlodipine_allergy-09",
+      "stratum": "amlodipine_allergy",
+      "case_text": "A 53-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergic to amlodipine. Medications: none.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "amlodipine_allergy"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_allergy"
+      ],
+      "expected_treatment_conflict": true
+    },
+    {
+      "case_id": "medsafe-amlodipine_allergy-10",
+      "stratum": "amlodipine_allergy",
+      "case_text": "A 54-year-old adult has confirmed hypertension. Amlodipine is being considered. No current medications. Allergy to amlodipine.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "amlodipine_allergy"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_allergy"
+      ],
+      "expected_treatment_conflict": true
+    },
+    {
+      "case_id": "medsafe-amlodipine_allergy-11",
+      "stratum": "amlodipine_allergy",
+      "case_text": "A 55-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergies: amlodipine. Takes no medications.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "amlodipine_allergy"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_allergy"
+      ],
+      "expected_treatment_conflict": true
+    },
+    {
+      "case_id": "medsafe-amlodipine_allergy-12",
+      "stratum": "amlodipine_allergy",
+      "case_text": "A 56-year-old adult has confirmed hypertension. Amlodipine is being considered. Medications: none. Amlodipine allergy.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "amlodipine_allergy"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_allergy"
+      ],
+      "expected_treatment_conflict": true
+    },
+    {
+      "case_id": "medsafe-simvastatin_interaction-01",
+      "stratum": "simvastatin_interaction",
+      "case_text": "A 45-year-old adult has confirmed hypertension. Amlodipine is being considered. No known drug allergies. Takes simvastatin.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "current",
+            "source_phrase": "Takes simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [
+        "amlodipine_simvastatin"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_simvastatin"
+      ],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-simvastatin_interaction-02",
+      "stratum": "simvastatin_interaction",
+      "case_text": "A 46-year-old adult has confirmed hypertension. Amlodipine is being considered. Taking simvastatin. NKDA.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "current",
+            "source_phrase": "Takes simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [
+        "amlodipine_simvastatin"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_simvastatin"
+      ],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-simvastatin_interaction-03",
+      "stratum": "simvastatin_interaction",
+      "case_text": "A 47-year-old adult has confirmed hypertension. Amlodipine is being considered. Denies drug allergies. Currently on simvastatin.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "current",
+            "source_phrase": "Takes simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [
+        "amlodipine_simvastatin"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_simvastatin"
+      ],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-simvastatin_interaction-04",
+      "stratum": "simvastatin_interaction",
+      "case_text": "A 48-year-old adult has confirmed hypertension. Amlodipine is being considered. Current medications include simvastatin. No known drug allergies.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "current",
+            "source_phrase": "Takes simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [
+        "amlodipine_simvastatin"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_simvastatin"
+      ],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-simvastatin_interaction-05",
+      "stratum": "simvastatin_interaction",
+      "case_text": "A 49-year-old adult has confirmed hypertension. Amlodipine is being considered. NKDA. Takes simvastatin.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "current",
+            "source_phrase": "Takes simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [
+        "amlodipine_simvastatin"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_simvastatin"
+      ],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-simvastatin_interaction-06",
+      "stratum": "simvastatin_interaction",
+      "case_text": "A 50-year-old adult has confirmed hypertension. Amlodipine is being considered. Taking simvastatin. Denies drug allergies.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "current",
+            "source_phrase": "Takes simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [
+        "amlodipine_simvastatin"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_simvastatin"
+      ],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-simvastatin_interaction-07",
+      "stratum": "simvastatin_interaction",
+      "case_text": "A 51-year-old adult has confirmed hypertension. Amlodipine is being considered. No known drug allergies. Currently on simvastatin.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "current",
+            "source_phrase": "Takes simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [
+        "amlodipine_simvastatin"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_simvastatin"
+      ],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-simvastatin_interaction-08",
+      "stratum": "simvastatin_interaction",
+      "case_text": "A 52-year-old adult has confirmed hypertension. Amlodipine is being considered. Current medications include simvastatin. NKDA.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "current",
+            "source_phrase": "Takes simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [
+        "amlodipine_simvastatin"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_simvastatin"
+      ],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-simvastatin_interaction-09",
+      "stratum": "simvastatin_interaction",
+      "case_text": "A 53-year-old adult has confirmed hypertension. Amlodipine is being considered. Denies drug allergies. Takes simvastatin.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "current",
+            "source_phrase": "Takes simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [
+        "amlodipine_simvastatin"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_simvastatin"
+      ],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-simvastatin_interaction-10",
+      "stratum": "simvastatin_interaction",
+      "case_text": "A 54-year-old adult has confirmed hypertension. Amlodipine is being considered. Taking simvastatin. No known drug allergies.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "current",
+            "source_phrase": "Takes simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [
+        "amlodipine_simvastatin"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_simvastatin"
+      ],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-simvastatin_interaction-11",
+      "stratum": "simvastatin_interaction",
+      "case_text": "A 55-year-old adult has confirmed hypertension. Amlodipine is being considered. NKDA. Currently on simvastatin.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "current",
+            "source_phrase": "Takes simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [
+        "amlodipine_simvastatin"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_simvastatin"
+      ],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-simvastatin_interaction-12",
+      "stratum": "simvastatin_interaction",
+      "case_text": "A 56-year-old adult has confirmed hypertension. Amlodipine is being considered. Current medications include simvastatin. Denies drug allergies.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "current",
+            "source_phrase": "Takes simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [
+        "amlodipine_simvastatin"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_simvastatin"
+      ],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-both_warnings-01",
+      "stratum": "both_warnings",
+      "case_text": "A 45-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergic to amlodipine. Takes simvastatin.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "current",
+            "source_phrase": "Takes simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [
+        "amlodipine_allergy",
+        "amlodipine_simvastatin"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_allergy",
+        "amlodipine_simvastatin"
+      ],
+      "expected_treatment_conflict": true
+    },
+    {
+      "case_id": "medsafe-both_warnings-02",
+      "stratum": "both_warnings",
+      "case_text": "A 46-year-old adult has confirmed hypertension. Amlodipine is being considered. Taking simvastatin. Allergy to amlodipine.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "current",
+            "source_phrase": "Takes simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [
+        "amlodipine_allergy",
+        "amlodipine_simvastatin"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_allergy",
+        "amlodipine_simvastatin"
+      ],
+      "expected_treatment_conflict": true
+    },
+    {
+      "case_id": "medsafe-both_warnings-03",
+      "stratum": "both_warnings",
+      "case_text": "A 47-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergies: amlodipine. Currently on simvastatin.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "current",
+            "source_phrase": "Takes simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [
+        "amlodipine_allergy",
+        "amlodipine_simvastatin"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_allergy",
+        "amlodipine_simvastatin"
+      ],
+      "expected_treatment_conflict": true
+    },
+    {
+      "case_id": "medsafe-both_warnings-04",
+      "stratum": "both_warnings",
+      "case_text": "A 48-year-old adult has confirmed hypertension. Amlodipine is being considered. Current medications include simvastatin. Amlodipine allergy.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "current",
+            "source_phrase": "Takes simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [
+        "amlodipine_allergy",
+        "amlodipine_simvastatin"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_allergy",
+        "amlodipine_simvastatin"
+      ],
+      "expected_treatment_conflict": true
+    },
+    {
+      "case_id": "medsafe-both_warnings-05",
+      "stratum": "both_warnings",
+      "case_text": "A 49-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergic to amlodipine. Takes simvastatin.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "current",
+            "source_phrase": "Takes simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [
+        "amlodipine_allergy",
+        "amlodipine_simvastatin"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_allergy",
+        "amlodipine_simvastatin"
+      ],
+      "expected_treatment_conflict": true
+    },
+    {
+      "case_id": "medsafe-both_warnings-06",
+      "stratum": "both_warnings",
+      "case_text": "A 50-year-old adult has confirmed hypertension. Amlodipine is being considered. Taking simvastatin. Allergy to amlodipine.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "current",
+            "source_phrase": "Takes simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [
+        "amlodipine_allergy",
+        "amlodipine_simvastatin"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_allergy",
+        "amlodipine_simvastatin"
+      ],
+      "expected_treatment_conflict": true
+    },
+    {
+      "case_id": "medsafe-both_warnings-07",
+      "stratum": "both_warnings",
+      "case_text": "A 51-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergies: amlodipine. Currently on simvastatin.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "current",
+            "source_phrase": "Takes simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [
+        "amlodipine_allergy",
+        "amlodipine_simvastatin"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_allergy",
+        "amlodipine_simvastatin"
+      ],
+      "expected_treatment_conflict": true
+    },
+    {
+      "case_id": "medsafe-both_warnings-08",
+      "stratum": "both_warnings",
+      "case_text": "A 52-year-old adult has confirmed hypertension. Amlodipine is being considered. Current medications include simvastatin. Amlodipine allergy.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "current",
+            "source_phrase": "Takes simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [
+        "amlodipine_allergy",
+        "amlodipine_simvastatin"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_allergy",
+        "amlodipine_simvastatin"
+      ],
+      "expected_treatment_conflict": true
+    },
+    {
+      "case_id": "medsafe-both_warnings-09",
+      "stratum": "both_warnings",
+      "case_text": "A 53-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergic to amlodipine. Takes simvastatin.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "current",
+            "source_phrase": "Takes simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [
+        "amlodipine_allergy",
+        "amlodipine_simvastatin"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_allergy",
+        "amlodipine_simvastatin"
+      ],
+      "expected_treatment_conflict": true
+    },
+    {
+      "case_id": "medsafe-both_warnings-10",
+      "stratum": "both_warnings",
+      "case_text": "A 54-year-old adult has confirmed hypertension. Amlodipine is being considered. Taking simvastatin. Allergy to amlodipine.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "current",
+            "source_phrase": "Takes simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [
+        "amlodipine_allergy",
+        "amlodipine_simvastatin"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_allergy",
+        "amlodipine_simvastatin"
+      ],
+      "expected_treatment_conflict": true
+    },
+    {
+      "case_id": "medsafe-both_warnings-11",
+      "stratum": "both_warnings",
+      "case_text": "A 55-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergies: amlodipine. Currently on simvastatin.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "current",
+            "source_phrase": "Takes simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [
+        "amlodipine_allergy",
+        "amlodipine_simvastatin"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_allergy",
+        "amlodipine_simvastatin"
+      ],
+      "expected_treatment_conflict": true
+    },
+    {
+      "case_id": "medsafe-both_warnings-12",
+      "stratum": "both_warnings",
+      "case_text": "A 56-year-old adult has confirmed hypertension. Amlodipine is being considered. Current medications include simvastatin. Amlodipine allergy.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "current",
+            "source_phrase": "Takes simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [
+        "amlodipine_allergy",
+        "amlodipine_simvastatin"
+      ],
+      "expected_supported_warning_types": [
+        "amlodipine_allergy",
+        "amlodipine_simvastatin"
+      ],
+      "expected_treatment_conflict": true
+    },
+    {
+      "case_id": "medsafe-unknown_allergy-01",
+      "stratum": "unknown_allergy",
+      "case_text": "A 45-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergy history was not supplied. No current medications.",
+      "structured_facts": {
+        "allergy_status": "unknown",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "allergy_status_unconfirmed"
+      ],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-unknown_allergy-02",
+      "stratum": "unknown_allergy",
+      "case_text": "A 46-year-old adult has confirmed hypertension. Amlodipine is being considered. Takes no medications. Allergy information is unavailable.",
+      "structured_facts": {
+        "allergy_status": "unknown",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "allergy_status_unconfirmed"
+      ],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-unknown_allergy-03",
+      "stratum": "unknown_allergy",
+      "case_text": "A 47-year-old adult has confirmed hypertension. Amlodipine is being considered. No allergy history was recorded. Medications: none.",
+      "structured_facts": {
+        "allergy_status": "unknown",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "allergy_status_unconfirmed"
+      ],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-unknown_allergy-04",
+      "stratum": "unknown_allergy",
+      "case_text": "A 48-year-old adult has confirmed hypertension. Amlodipine is being considered. No current medications. Allergy history was not supplied.",
+      "structured_facts": {
+        "allergy_status": "unknown",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "allergy_status_unconfirmed"
+      ],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-unknown_allergy-05",
+      "stratum": "unknown_allergy",
+      "case_text": "A 49-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergy information is unavailable. Takes no medications.",
+      "structured_facts": {
+        "allergy_status": "unknown",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "allergy_status_unconfirmed"
+      ],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-unknown_allergy-06",
+      "stratum": "unknown_allergy",
+      "case_text": "A 50-year-old adult has confirmed hypertension. Amlodipine is being considered. Medications: none. No allergy history was recorded.",
+      "structured_facts": {
+        "allergy_status": "unknown",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "allergy_status_unconfirmed"
+      ],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-unknown_allergy-07",
+      "stratum": "unknown_allergy",
+      "case_text": "A 51-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergy history was not supplied. No current medications.",
+      "structured_facts": {
+        "allergy_status": "unknown",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "allergy_status_unconfirmed"
+      ],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-unknown_allergy-08",
+      "stratum": "unknown_allergy",
+      "case_text": "A 52-year-old adult has confirmed hypertension. Amlodipine is being considered. Takes no medications. Allergy information is unavailable.",
+      "structured_facts": {
+        "allergy_status": "unknown",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "allergy_status_unconfirmed"
+      ],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-unknown_allergy-09",
+      "stratum": "unknown_allergy",
+      "case_text": "A 53-year-old adult has confirmed hypertension. Amlodipine is being considered. No allergy history was recorded. Medications: none.",
+      "structured_facts": {
+        "allergy_status": "unknown",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "allergy_status_unconfirmed"
+      ],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-unknown_allergy-10",
+      "stratum": "unknown_allergy",
+      "case_text": "A 54-year-old adult has confirmed hypertension. Amlodipine is being considered. No current medications. Allergy history was not supplied.",
+      "structured_facts": {
+        "allergy_status": "unknown",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "allergy_status_unconfirmed"
+      ],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-unknown_allergy-11",
+      "stratum": "unknown_allergy",
+      "case_text": "A 55-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergy information is unavailable. Takes no medications.",
+      "structured_facts": {
+        "allergy_status": "unknown",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "allergy_status_unconfirmed"
+      ],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-unknown_allergy-12",
+      "stratum": "unknown_allergy",
+      "case_text": "A 56-year-old adult has confirmed hypertension. Amlodipine is being considered. Medications: none. No allergy history was recorded.",
+      "structured_facts": {
+        "allergy_status": "unknown",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "allergy_status_unconfirmed"
+      ],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-conflicting_allergy-01",
+      "stratum": "conflicting_allergy",
+      "case_text": "A 45-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergic to amlodipine. No known drug allergies. No current medications.",
+      "structured_facts": {
+        "allergy_status": "conflicting",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "allergy_status_unconfirmed"
+      ],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-conflicting_allergy-02",
+      "stratum": "conflicting_allergy",
+      "case_text": "A 46-year-old adult has confirmed hypertension. Amlodipine is being considered. Takes no medications. NKDA. Allergy to amlodipine.",
+      "structured_facts": {
+        "allergy_status": "conflicting",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "allergy_status_unconfirmed"
+      ],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-conflicting_allergy-03",
+      "stratum": "conflicting_allergy",
+      "case_text": "A 47-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergies: amlodipine. Denies drug allergies. Medications: none.",
+      "structured_facts": {
+        "allergy_status": "conflicting",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "allergy_status_unconfirmed"
+      ],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-conflicting_allergy-04",
+      "stratum": "conflicting_allergy",
+      "case_text": "A 48-year-old adult has confirmed hypertension. Amlodipine is being considered. No current medications. No known drug allergies. Amlodipine allergy.",
+      "structured_facts": {
+        "allergy_status": "conflicting",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "allergy_status_unconfirmed"
+      ],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-conflicting_allergy-05",
+      "stratum": "conflicting_allergy",
+      "case_text": "A 49-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergic to amlodipine. NKDA. Takes no medications.",
+      "structured_facts": {
+        "allergy_status": "conflicting",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "allergy_status_unconfirmed"
+      ],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-conflicting_allergy-06",
+      "stratum": "conflicting_allergy",
+      "case_text": "A 50-year-old adult has confirmed hypertension. Amlodipine is being considered. Medications: none. Denies drug allergies. Allergy to amlodipine.",
+      "structured_facts": {
+        "allergy_status": "conflicting",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "allergy_status_unconfirmed"
+      ],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-conflicting_allergy-07",
+      "stratum": "conflicting_allergy",
+      "case_text": "A 51-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergies: amlodipine. No known drug allergies. No current medications.",
+      "structured_facts": {
+        "allergy_status": "conflicting",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "allergy_status_unconfirmed"
+      ],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-conflicting_allergy-08",
+      "stratum": "conflicting_allergy",
+      "case_text": "A 52-year-old adult has confirmed hypertension. Amlodipine is being considered. Takes no medications. NKDA. Amlodipine allergy.",
+      "structured_facts": {
+        "allergy_status": "conflicting",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "allergy_status_unconfirmed"
+      ],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-conflicting_allergy-09",
+      "stratum": "conflicting_allergy",
+      "case_text": "A 53-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergic to amlodipine. Denies drug allergies. Medications: none.",
+      "structured_facts": {
+        "allergy_status": "conflicting",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "allergy_status_unconfirmed"
+      ],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-conflicting_allergy-10",
+      "stratum": "conflicting_allergy",
+      "case_text": "A 54-year-old adult has confirmed hypertension. Amlodipine is being considered. No current medications. No known drug allergies. Allergy to amlodipine.",
+      "structured_facts": {
+        "allergy_status": "conflicting",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "allergy_status_unconfirmed"
+      ],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-conflicting_allergy-11",
+      "stratum": "conflicting_allergy",
+      "case_text": "A 55-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergies: amlodipine. NKDA. Takes no medications.",
+      "structured_facts": {
+        "allergy_status": "conflicting",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "allergy_status_unconfirmed"
+      ],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-conflicting_allergy-12",
+      "stratum": "conflicting_allergy",
+      "case_text": "A 56-year-old adult has confirmed hypertension. Amlodipine is being considered. Medications: none. Denies drug allergies. Amlodipine allergy.",
+      "structured_facts": {
+        "allergy_status": "conflicting",
+        "allergies": [
+          {
+            "text": "amlodipine",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [
+        "allergy_status_unconfirmed"
+      ],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-different_drug_allergy-01",
+      "stratum": "different_drug_allergy",
+      "case_text": "A 45-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergic to penicillin. No current medications.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "penicillin",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-different_drug_allergy-02",
+      "stratum": "different_drug_allergy",
+      "case_text": "A 46-year-old adult has confirmed hypertension. Amlodipine is being considered. Takes no medications. Allergic to aspirin.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "aspirin",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-different_drug_allergy-03",
+      "stratum": "different_drug_allergy",
+      "case_text": "A 47-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergic to amoxicillin. Medications: none.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amoxicillin",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-different_drug_allergy-04",
+      "stratum": "different_drug_allergy",
+      "case_text": "A 48-year-old adult has confirmed hypertension. Amlodipine is being considered. No current medications. Allergic to ibuprofen.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "ibuprofen",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-different_drug_allergy-05",
+      "stratum": "different_drug_allergy",
+      "case_text": "A 49-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergic to azithromycin. Takes no medications.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "azithromycin",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-different_drug_allergy-06",
+      "stratum": "different_drug_allergy",
+      "case_text": "A 50-year-old adult has confirmed hypertension. Amlodipine is being considered. Medications: none. Allergic to lisinopril.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "lisinopril",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-different_drug_allergy-07",
+      "stratum": "different_drug_allergy",
+      "case_text": "A 51-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergic to metformin. No current medications.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "metformin",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-different_drug_allergy-08",
+      "stratum": "different_drug_allergy",
+      "case_text": "A 52-year-old adult has confirmed hypertension. Amlodipine is being considered. Takes no medications. Allergic to sulfonamide.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "sulfonamide",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-different_drug_allergy-09",
+      "stratum": "different_drug_allergy",
+      "case_text": "A 53-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergic to rosuvastatin. Medications: none.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "rosuvastatin",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-different_drug_allergy-10",
+      "stratum": "different_drug_allergy",
+      "case_text": "A 54-year-old adult has confirmed hypertension. Amlodipine is being considered. No current medications. Allergic to atorvastatin.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "atorvastatin",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-different_drug_allergy-11",
+      "stratum": "different_drug_allergy",
+      "case_text": "A 55-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergic to clindamycin. Takes no medications.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "clindamycin",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-different_drug_allergy-12",
+      "stratum": "different_drug_allergy",
+      "case_text": "A 56-year-old adult has confirmed hypertension. Amlodipine is being considered. Medications: none. Allergic to doxycycline.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "doxycycline",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-stopped_simvastatin-01",
+      "stratum": "stopped_simvastatin",
+      "case_text": "A 45-year-old adult has confirmed hypertension. Amlodipine is being considered. No known drug allergies. Stopped simvastatin. No current medications.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "stopped",
+            "source_phrase": "Stopped simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-stopped_simvastatin-02",
+      "stratum": "stopped_simvastatin",
+      "case_text": "A 46-year-old adult has confirmed hypertension. Amlodipine is being considered. Takes no medications. Stopped simvastatin. NKDA.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "stopped",
+            "source_phrase": "Stopped simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-stopped_simvastatin-03",
+      "stratum": "stopped_simvastatin",
+      "case_text": "A 47-year-old adult has confirmed hypertension. Amlodipine is being considered. Denies drug allergies. Stopped simvastatin. Medications: none.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "stopped",
+            "source_phrase": "Stopped simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-stopped_simvastatin-04",
+      "stratum": "stopped_simvastatin",
+      "case_text": "A 48-year-old adult has confirmed hypertension. Amlodipine is being considered. No current medications. Stopped simvastatin. No known drug allergies.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "stopped",
+            "source_phrase": "Stopped simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-stopped_simvastatin-05",
+      "stratum": "stopped_simvastatin",
+      "case_text": "A 49-year-old adult has confirmed hypertension. Amlodipine is being considered. NKDA. Stopped simvastatin. Takes no medications.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "stopped",
+            "source_phrase": "Stopped simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-stopped_simvastatin-06",
+      "stratum": "stopped_simvastatin",
+      "case_text": "A 50-year-old adult has confirmed hypertension. Amlodipine is being considered. Medications: none. Stopped simvastatin. Denies drug allergies.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "stopped",
+            "source_phrase": "Stopped simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-stopped_simvastatin-07",
+      "stratum": "stopped_simvastatin",
+      "case_text": "A 51-year-old adult has confirmed hypertension. Amlodipine is being considered. No known drug allergies. Stopped simvastatin. No current medications.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "stopped",
+            "source_phrase": "Stopped simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-stopped_simvastatin-08",
+      "stratum": "stopped_simvastatin",
+      "case_text": "A 52-year-old adult has confirmed hypertension. Amlodipine is being considered. Takes no medications. Stopped simvastatin. NKDA.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "stopped",
+            "source_phrase": "Stopped simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-stopped_simvastatin-09",
+      "stratum": "stopped_simvastatin",
+      "case_text": "A 53-year-old adult has confirmed hypertension. Amlodipine is being considered. Denies drug allergies. Stopped simvastatin. Medications: none.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "stopped",
+            "source_phrase": "Stopped simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-stopped_simvastatin-10",
+      "stratum": "stopped_simvastatin",
+      "case_text": "A 54-year-old adult has confirmed hypertension. Amlodipine is being considered. No current medications. Stopped simvastatin. No known drug allergies.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "stopped",
+            "source_phrase": "Stopped simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-stopped_simvastatin-11",
+      "stratum": "stopped_simvastatin",
+      "case_text": "A 55-year-old adult has confirmed hypertension. Amlodipine is being considered. NKDA. Stopped simvastatin. Takes no medications.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "stopped",
+            "source_phrase": "Stopped simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-stopped_simvastatin-12",
+      "stratum": "stopped_simvastatin",
+      "case_text": "A 56-year-old adult has confirmed hypertension. Amlodipine is being considered. Medications: none. Stopped simvastatin. Denies drug allergies.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": [
+          {
+            "name": "simvastatin",
+            "status": "stopped",
+            "source_phrase": "Stopped simvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-lookalike_names-01",
+      "stratum": "lookalike_names",
+      "case_text": "A 45-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergic to amiodarone. No current medications.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amiodarone",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-lookalike_names-02",
+      "stratum": "lookalike_names",
+      "case_text": "A 46-year-old adult has confirmed hypertension. Amlodipine is being considered. Takes no medications. Allergic to amiloride.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amiloride",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-lookalike_names-03",
+      "stratum": "lookalike_names",
+      "case_text": "A 47-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergic to amlodipina. Medications: none.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amlodipina",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-lookalike_names-04",
+      "stratum": "lookalike_names",
+      "case_text": "A 48-year-old adult has confirmed hypertension. Amlodipine is being considered. No current medications. Allergic to amlodipine-like.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amlodipine-like",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-lookalike_names-05",
+      "stratum": "lookalike_names",
+      "case_text": "A 49-year-old adult has confirmed hypertension. Amlodipine is being considered. Allergic to amoxicillin. Takes no medications.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amoxicillin",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-lookalike_names-06",
+      "stratum": "lookalike_names",
+      "case_text": "A 50-year-old adult has confirmed hypertension. Amlodipine is being considered. Medications: none. Allergic to amitriptyline.",
+      "structured_facts": {
+        "allergy_status": "allergies_reported",
+        "allergies": [
+          {
+            "text": "amitriptyline",
+            "entity_type": "allergy",
+            "extraction_certainty": "explicit"
+          }
+        ],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-lookalike_names-07",
+      "stratum": "lookalike_names",
+      "case_text": "A 51-year-old adult has confirmed hypertension. Amlodipine is being considered. No known drug allergies. Takes simvastatine.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "simvastatine",
+            "status": "current",
+            "source_phrase": "Takes simvastatine."
+          }
+        ]
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-lookalike_names-08",
+      "stratum": "lookalike_names",
+      "case_text": "A 52-year-old adult has confirmed hypertension. Amlodipine is being considered. Takes pravastatin. NKDA.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "pravastatin",
+            "status": "current",
+            "source_phrase": "Takes pravastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-lookalike_names-09",
+      "stratum": "lookalike_names",
+      "case_text": "A 53-year-old adult has confirmed hypertension. Amlodipine is being considered. Denies drug allergies. Takes atorvastatin.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "atorvastatin",
+            "status": "current",
+            "source_phrase": "Takes atorvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-lookalike_names-10",
+      "stratum": "lookalike_names",
+      "case_text": "A 54-year-old adult has confirmed hypertension. Amlodipine is being considered. Takes rosuvastatin. No known drug allergies.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "rosuvastatin",
+            "status": "current",
+            "source_phrase": "Takes rosuvastatin."
+          }
+        ]
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-lookalike_names-11",
+      "stratum": "lookalike_names",
+      "case_text": "A 55-year-old adult has confirmed hypertension. Amlodipine is being considered. NKDA. Takes simethicone.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "simethicone",
+            "status": "current",
+            "source_phrase": "Takes simethicone."
+          }
+        ]
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-lookalike_names-12",
+      "stratum": "lookalike_names",
+      "case_text": "A 56-year-old adult has confirmed hypertension. Amlodipine is being considered. Takes sitagliptin. Denies drug allergies.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "reported",
+        "medication_statements": [
+          {
+            "name": "sitagliptin",
+            "status": "current",
+            "source_phrase": "Takes sitagliptin."
+          }
+        ]
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-clean_negative-01",
+      "stratum": "clean_negative",
+      "case_text": "A 45-year-old adult has confirmed hypertension. Amlodipine is being considered. No known drug allergies. No current medications.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-clean_negative-02",
+      "stratum": "clean_negative",
+      "case_text": "A 46-year-old adult has confirmed hypertension. Amlodipine is being considered. Takes no medications. NKDA.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-clean_negative-03",
+      "stratum": "clean_negative",
+      "case_text": "A 47-year-old adult has confirmed hypertension. Amlodipine is being considered. Denies drug allergies. Medications: none.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-clean_negative-04",
+      "stratum": "clean_negative",
+      "case_text": "A 48-year-old adult has confirmed hypertension. Amlodipine is being considered. No current medications. No known drug allergies.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-clean_negative-05",
+      "stratum": "clean_negative",
+      "case_text": "A 49-year-old adult has confirmed hypertension. Amlodipine is being considered. NKDA. Takes no medications.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-clean_negative-06",
+      "stratum": "clean_negative",
+      "case_text": "A 50-year-old adult has confirmed hypertension. Amlodipine is being considered. Medications: none. Denies drug allergies.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-clean_negative-07",
+      "stratum": "clean_negative",
+      "case_text": "A 51-year-old adult has confirmed hypertension. Amlodipine is being considered. No known drug allergies. No current medications.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-clean_negative-08",
+      "stratum": "clean_negative",
+      "case_text": "A 52-year-old adult has confirmed hypertension. Amlodipine is being considered. Takes no medications. NKDA.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-clean_negative-09",
+      "stratum": "clean_negative",
+      "case_text": "A 53-year-old adult has confirmed hypertension. Amlodipine is being considered. Denies drug allergies. Medications: none.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-clean_negative-10",
+      "stratum": "clean_negative",
+      "case_text": "A 54-year-old adult has confirmed hypertension. Amlodipine is being considered. No current medications. No known drug allergies.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-clean_negative-11",
+      "stratum": "clean_negative",
+      "case_text": "A 55-year-old adult has confirmed hypertension. Amlodipine is being considered. NKDA. Takes no medications.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    },
+    {
+      "case_id": "medsafe-clean_negative-12",
+      "stratum": "clean_negative",
+      "case_text": "A 56-year-old adult has confirmed hypertension. Amlodipine is being considered. Medications: none. Denies drug allergies.",
+      "structured_facts": {
+        "allergy_status": "no_known_allergies",
+        "allergies": [],
+        "medication_list_status": "none_reported",
+        "medication_statements": []
+      },
+      "expected_warning_types": [],
+      "expected_supported_warning_types": [],
+      "expected_treatment_conflict": false
+    }
+  ]
+}

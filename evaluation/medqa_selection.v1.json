@@ -1,0 +1,62 @@
+{
+  "dataset_id": "medqa-us-test-diagnosis-exam-pilot",
+  "dataset_version": "1.0.0",
+  "reference_kind": "medqa_exam_answer",
+  "selection": {
+    "source_path": "datasets/literature/MedQA/MedQA-USMLE/questions/US/test.jsonl",
+    "source_sha256": "cfa75cbcc53c29b023752b0a395ff49d8202121041392735ae44771a5ec734a3",
+    "source_row_count": 1273,
+    "source_url": "https://github.com/jind11/MedQA",
+    "eligibility": "Exact terminal most-likely-diagnosis prompt; answer equals keyed option; stem >=100 characters; no literal answer in stem; recognized exam step",
+    "selection_seed": "cdss-medqa-diagnosis-v1",
+    "quota_by_step": {
+      "step1": 12,
+      "step2&3": 24
+    },
+    "eligible_by_step": {
+      "step1": 27,
+      "step2&3": 62
+    },
+    "excluded_reason_counts": {
+      "not_exact_diagnosis_prompt": 1184
+    },
+    "selected_zero_based_source_indices": [
+      35,
+      130,
+      154,
+      159,
+      167,
+      188,
+      256,
+      282,
+      303,
+      335,
+      359,
+      374,
+      392,
+      529,
+      545,
+      584,
+      594,
+      603,
+      632,
+      668,
+      671,
+      711,
+      843,
+      853,
+      917,
+      1002,
+      1082,
+      1092,
+      1094,
+      1170,
+      1174,
+      1189,
+      1228,
+      1243,
+      1254,
+      1258
+    ]
+  }
+}

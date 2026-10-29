@@ -1,0 +1,499 @@
+{
+  "snapshot_type": "exploratory_medqa_test_exam_vignette_pilot",
+  "clinical_validation": false,
+  "case_count": 36,
+  "distinct_exam_answer_count": 36,
+  "selection_manifest_sha256": "5b78f157dad99035d0d279597a847a0370fd9fcbf3c3718358b37e21e7634042",
+  "dataset_sha256": "ef0304e8d907099a7441571a09370eb0ddb4e1a1db93d63e844db595cc8a8a45",
+  "case_results_sha256": "fb6a2d3155c99ad577ba0db39c8de838d58a9889d8175cec8e6aeabe4618dc1e",
+  "metrics_sha256": "cab8a3df584bdb920daf3330c437fe82e52f5931872962989536da0f23073cee",
+  "run_manifest_sha256": "3f0997ab2c53cab896381c1a9b237d87c6faa9c4078a374fa1f68cd3bc8602e7",
+  "run_created_utc": "2026-10-12T20:10:58.489587+00:00",
+  "run_git_sha": "465e3984304951c9a913da98f16dc32cf7bd8b9f",
+  "run_git_worktree_dirty": false,
+  "source_manifest_sha256": "3ecb766b7dd00f233f50a8dcf481bfd0135d95add924ca3b852cbca7596d4667",
+  "reference_note": "MedQA exam answer keys are not clinician-adjudicated patient diagnoses; exact top-k matches are generative vignette answer agreement, not clinical accuracy",
+  "provider_consistency": {
+    "matched_case_count": 28,
+    "mismatched_case_count": 8,
+    "unknown_case_count": 0
+  },
+  "per_mode": {
+    "llm_only": {
+      "metrics": {
+        "case_count": 36,
+        "successful_cases": 36,
+        "failed_cases": 0,
+        "diagnostic_top1": {
+          "numerator": 19,
+          "denominator": 36,
+          "value": 0.5278,
+          "unavailable_reason": null
+        },
+        "diagnostic_top3": {
+          "numerator": 19,
+          "denominator": 36,
+          "value": 0.5278,
+          "unavailable_reason": null
+        },
+        "citation_validity": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "unavailable_reason": "No citation IDs emitted"
+        },
+        "claim_support_accuracy": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "unavailable_reason": "Requires adjudicated supported/conflicting claims"
+        },
+        "unsupported_claim_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "unavailable_reason": "Requires adjudicated supported claims"
+        },
+        "medication_warning_sensitivity": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "unavailable_reason": "No expected warning types in successful cases"
+        },
+        "verified_label_warning_sensitivity": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "unavailable_reason": "No expected label warnings in successful cases"
+        },
+        "label_warning_false_positive_case_rate": {
+          "numerator": 0,
+          "denominator": 36,
+          "value": 0.0,
+          "unavailable_reason": null
+        },
+        "unsafe_option_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "unavailable_reason": "Requires clinician-reviewed treatment safety labels"
+        },
+        "claim_abstention_rate": {
+          "numerator": 160,
+          "denominator": 160,
+          "value": 1.0,
+          "unavailable_reason": null
+        },
+        "reviewed_claims": 0,
+        "latency_ms": {
+          "median": 4397.0,
+          "p95": 15594.0,
+          "max": 18101.4
+        }
+      },
+      "overall_diagnosis_agreement": {
+        "diagnostic_top1": {
+          "numerator": 19,
+          "denominator": 36,
+          "value": 0.5278,
+          "unavailable_reason": null,
+          "wilson_95": [
+            0.3701,
+            0.6801
+          ]
+        },
+        "diagnostic_top3": {
+          "numerator": 19,
+          "denominator": 36,
+          "value": 0.5278,
+          "unavailable_reason": null,
+          "wilson_95": [
+            0.3701,
+            0.6801
+          ]
+        }
+      },
+      "exam_step": {
+        "step1": {
+          "attempted": 12,
+          "complete": 12,
+          "failed": 0,
+          "completed_without_ranked_diagnosis": 1,
+          "top1": {
+            "numerator": 5,
+            "denominator": 12,
+            "value": 0.4167,
+            "unavailable_reason": null,
+            "wilson_95": [
+              0.1933,
+              0.6805
+            ]
+          },
+          "top3": {
+            "numerator": 5,
+            "denominator": 12,
+            "value": 0.4167,
+            "unavailable_reason": null,
+            "wilson_95": [
+              0.1933,
+              0.6805
+            ]
+          }
+        },
+        "step2&3": {
+          "attempted": 24,
+          "complete": 24,
+          "failed": 0,
+          "completed_without_ranked_diagnosis": 0,
+          "top1": {
+            "numerator": 14,
+            "denominator": 24,
+            "value": 0.5833,
+            "unavailable_reason": null,
+            "wilson_95": [
+              0.3883,
+              0.7553
+            ]
+          },
+          "top3": {
+            "numerator": 14,
+            "denominator": 24,
+            "value": 0.5833,
+            "unavailable_reason": null,
+            "wilson_95": [
+              0.3883,
+              0.7553
+            ]
+          }
+        }
+      },
+      "completed_without_ranked_diagnosis": 1,
+      "synthesis_provider_counts": {
+        "Gemini Flash Lite:gemini-3.5-flash-lite": 31,
+        "Gemini Flash:gemini-3.8-flash": 5
+      },
+      "graph_candidates_total": 0,
+      "authoritative_passages_total": 0
+    },
+    "text_rag": {
+      "metrics": {
+        "case_count": 36,
+        "successful_cases": 36,
+        "failed_cases": 0,
+        "diagnostic_top1": {
+          "numerator": 12,
+          "denominator": 36,
+          "value": 0.3333,
+          "unavailable_reason": null
+        },
+        "diagnostic_top3": {
+          "numerator": 13,
+          "denominator": 36,
+          "value": 0.3611,
+          "unavailable_reason": null
+        },
+        "citation_validity": {
+          "numerator": 22,
+          "denominator": 22,
+          "value": 1.0,
+          "unavailable_reason": null
+        },
+        "claim_support_accuracy": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "unavailable_reason": "Requires adjudicated supported/conflicting claims"
+        },
+        "unsupported_claim_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "unavailable_reason": "Requires adjudicated supported claims"
+        },
+        "medication_warning_sensitivity": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "unavailable_reason": "No expected warning types in successful cases"
+        },
+        "verified_label_warning_sensitivity": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "unavailable_reason": "No expected label warnings in successful cases"
+        },
+        "label_warning_false_positive_case_rate": {
+          "numerator": 0,
+          "denominator": 36,
+          "value": 0.0,
+          "unavailable_reason": null
+        },
+        "unsafe_option_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "unavailable_reason": "Requires clinician-reviewed treatment safety labels"
+        },
+        "claim_abstention_rate": {
+          "numerator": 94,
+          "denominator": 94,
+          "value": 1.0,
+          "unavailable_reason": null
+        },
+        "reviewed_claims": 0,
+        "latency_ms": {
+          "median": 3845.3,
+          "p95": 23214.0,
+          "max": 24899.4
+        }
+      },
+      "overall_diagnosis_agreement": {
+        "diagnostic_top1": {
+          "numerator": 12,
+          "denominator": 36,
+          "value": 0.3333,
+          "unavailable_reason": null,
+          "wilson_95": [
+            0.2021,
+            0.4967
+          ]
+        },
+        "diagnostic_top3": {
+          "numerator": 13,
+          "denominator": 36,
+          "value": 0.3611,
+          "unavailable_reason": null,
+          "wilson_95": [
+            0.2248,
+            0.5242
+          ]
+        }
+      },
+      "exam_step": {
+        "step1": {
+          "attempted": 12,
+          "complete": 12,
+          "failed": 0,
+          "completed_without_ranked_diagnosis": 5,
+          "top1": {
+            "numerator": 3,
+            "denominator": 12,
+            "value": 0.25,
+            "unavailable_reason": null,
+            "wilson_95": [
+              0.0889,
+              0.5323
+            ]
+          },
+          "top3": {
+            "numerator": 3,
+            "denominator": 12,
+            "value": 0.25,
+            "unavailable_reason": null,
+            "wilson_95": [
+              0.0889,
+              0.5323
+            ]
+          }
+        },
+        "step2&3": {
+          "attempted": 24,
+          "complete": 24,
+          "failed": 0,
+          "completed_without_ranked_diagnosis": 3,
+          "top1": {
+            "numerator": 9,
+            "denominator": 24,
+            "value": 0.375,
+            "unavailable_reason": null,
+            "wilson_95": [
+              0.2116,
+              0.5729
+            ]
+          },
+          "top3": {
+            "numerator": 10,
+            "denominator": 24,
+            "value": 0.4167,
+            "unavailable_reason": null,
+            "wilson_95": [
+              0.2447,
+              0.6117
+            ]
+          }
+        }
+      },
+      "completed_without_ranked_diagnosis": 8,
+      "synthesis_provider_counts": {
+        "Gemini Flash Lite:gemini-3.5-flash-lite": 32,
+        "Gemini Flash:gemini-3.8-flash": 4
+      },
+      "graph_candidates_total": 0,
+      "authoritative_passages_total": 360
+    },
+    "graph_text": {
+      "metrics": {
+        "case_count": 36,
+        "successful_cases": 36,
+        "failed_cases": 0,
+        "diagnostic_top1": {
+          "numerator": 14,
+          "denominator": 36,
+          "value": 0.3889,
+          "unavailable_reason": null
+        },
+        "diagnostic_top3": {
+          "numerator": 14,
+          "denominator": 36,
+          "value": 0.3889,
+          "unavailable_reason": null
+        },
+        "citation_validity": {
+          "numerator": 10,
+          "denominator": 10,
+          "value": 1.0,
+          "unavailable_reason": null
+        },
+        "claim_support_accuracy": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "unavailable_reason": "Requires adjudicated supported/conflicting claims"
+        },
+        "unsupported_claim_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "unavailable_reason": "Requires adjudicated supported claims"
+        },
+        "medication_warning_sensitivity": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "unavailable_reason": "No expected warning types in successful cases"
+        },
+        "verified_label_warning_sensitivity": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "unavailable_reason": "No expected label warnings in successful cases"
+        },
+        "label_warning_false_positive_case_rate": {
+          "numerator": 0,
+          "denominator": 36,
+          "value": 0.0,
+          "unavailable_reason": null
+        },
+        "unsafe_option_rate": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null,
+          "unavailable_reason": "Requires clinician-reviewed treatment safety labels"
+        },
+        "claim_abstention_rate": {
+          "numerator": 78,
+          "denominator": 78,
+          "value": 1.0,
+          "unavailable_reason": null
+        },
+        "reviewed_claims": 0,
+        "latency_ms": {
+          "median": 3894.8,
+          "p95": 19353.5,
+          "max": 32076.6
+        }
+      },
+      "overall_diagnosis_agreement": {
+        "diagnostic_top1": {
+          "numerator": 14,
+          "denominator": 36,
+          "value": 0.3889,
+          "unavailable_reason": null,
+          "wilson_95": [
+            0.2478,
+            0.5514
+          ]
+        },
+        "diagnostic_top3": {
+          "numerator": 14,
+          "denominator": 36,
+          "value": 0.3889,
+          "unavailable_reason": null,
+          "wilson_95": [
+            0.2478,
+            0.5514
+          ]
+        }
+      },
+      "exam_step": {
+        "step1": {
+          "attempted": 12,
+          "complete": 12,
+          "failed": 0,
+          "completed_without_ranked_diagnosis": 8,
+          "top1": {
+            "numerator": 2,
+            "denominator": 12,
+            "value": 0.1667,
+            "unavailable_reason": null,
+            "wilson_95": [
+              0.047,
+              0.448
+            ]
+          },
+          "top3": {
+            "numerator": 2,
+            "denominator": 12,
+            "value": 0.1667,
+            "unavailable_reason": null,
+            "wilson_95": [
+              0.047,
+              0.448
+            ]
+          }
+        },
+        "step2&3": {
+          "attempted": 24,
+          "complete": 24,
+          "failed": 0,
+          "completed_without_ranked_diagnosis": 5,
+          "top1": {
+            "numerator": 12,
+            "denominator": 24,
+            "value": 0.5,
+            "unavailable_reason": null,
+            "wilson_95": [
+              0.3143,
+              0.6857
+            ]
+          },
+          "top3": {
+            "numerator": 12,
+            "denominator": 24,
+            "value": 0.5,
+            "unavailable_reason": null,
+            "wilson_95": [
+              0.3143,
+              0.6857
+            ]
+          }
+        }
+      },
+      "completed_without_ranked_diagnosis": 13,
+      "synthesis_provider_counts": {
+        "Gemini Flash Lite:gemini-3.5-flash-lite": 32,
+        "Gemini Flash:gemini-3.8-flash": 4
+      },
+      "graph_candidates_total": 0,
+      "authoritative_passages_total": 360
+    }
+  },
+  "limitations": [
+    "Exam questions are not patient records or clinician-adjudicated reference diagnoses.",
+    "Only strict normalized equality to one keyed option is scored; synonymous answers can count as misses.",
+    "Public test questions may have appeared in provider training data.",
+    "Treatment, warning, claim-support, and relevant-passage reference labels are unavailable.",
+    "The pinned authoritative-source corpus covers only selected hypertension and amlodipine material.",
+    "Provider fallback and unpinned openrouter/free underlying models limit retrieval-mode comparisons."
+  ]
+}

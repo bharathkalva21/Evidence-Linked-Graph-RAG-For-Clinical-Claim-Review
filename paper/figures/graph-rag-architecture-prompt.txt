@@ -1,0 +1,58 @@
+Generated with the built-in image_gen tool.
+
+Use case: infographic-diagram. Create a polished publication-ready architecture figure for an IJDDT research paper. Use attached image solely as visual style reference: white background, portrait layout, pale colored rounded rectangular panels, dark navy headings, crisp sans-serif text, simple medical/data line icons, clean black orthogonal arrows. Create a new corrected diagram, not a copy of the reference's technical claims. High resolution, generous margins, perfectly readable text, flat vector-like finish, no gradients/shadows/watermarks.
+
+Title: "Graph-RAG Clinical Decision Support Architecture"
+
+Exact panel text and structure:
+Top centered blue panel:
+"1. Clinical Case Input"
+"Free-text clinical note or patient case"
+
+Below centered pale green panel:
+"2. Patient-Context Extraction"
+"Symptoms, conditions, medicines and allergies"
+"Explicit facts and missing information"
+"HPO / MONDO / drug-name linking"
+
+Below, three equal parallel panels:
+Blue left: "3a. Graph Retrieval"
+"Neo4j biomedical graph"
+"Disease and drug associations"
+"Candidate signals"
+Purple middle: "3b. Textbook Retrieval"
+"Qdrant vector search"
+"Top-k textbook passages"
+"Context for synthesis"
+Orange right: "3c. Pinned-Source Retrieval"
+"NICE guideline / DailyMed label"
+"Versioned section-level passages"
+"Stable source identifiers"
+
+Below centered pale pink panel:
+"4. Evidence Ranking and Claim Generation"
+"Heuristic ranking and conflict signals"
+"LLM-generated differential and typed claims"
+"New claims initially unverified"
+
+Below centered pale teal panel:
+"5. Source Verification and Safety Checks"
+"Pinned passage identity and provenance"
+"Limited source-scope checks"
+"Narrow amlodipine-label safety rules"
+"Unresolved claims remain unverified"
+
+Below small centered yellow diamond:
+"6. Retry needed?"
+Dashed feedback arrow from diamond right edge routed through clear outside right margin back into panel 2, label "Yes: expand retrieval; maximum 2 retries". Diamond bottom arrow to final panel label "No / retry limit reached".
+
+Bottom centered pale green panel:
+"7. Clinician-Review Report"
+"Differential and conditional treatment claims"
+"Claim status and exact source links"
+"Medication warnings and missing checks"
+
+Bottom small footnote:
+"Source identity does not establish clinical correctness. Retry scoring is uncalibrated."
+
+Connections: 1 -> 2; 2 branches into each retrieval panel; all three retrieval panels merge into 4; 4 -> 5 -> 6 -> 7. IMPORTANT extra direct connector from panel 3c to panel 5, routed down beside panels 4 and 5 without crossing text, labelled "Pinned passages". Maintain enough open gutters for this connector and the separate outside retry loop. Use clearly visible arrowheads. Keep icons small to leave text space. All copy exactly as specified. Do not add ICD/SNOMED, BioBERT, calibrated confidence scores, universal safety assurance or live authoritative retrieval. Reference image is a style reference only.

@@ -1,0 +1,123 @@
+{
+  "dataset_id": "synthetic-multidisease-diagnostic-pilot",
+  "dataset_version": "1.0.0",
+  "origin": "Hand-authored synthetic diagnostic pilot; provisional author-intended labels, no independent clinician adjudication",
+  "scope": "Adult outpatient presentations across four intended conditions; disease names withheld from case text; not a clinical diagnostic benchmark",
+  "case_selection": "Three prespecified, distinct presentation patterns per condition; no cases selected after inspecting model outputs",
+  "reference_links": {
+    "hypertension": "https://www.nice.org.uk/guidance/ng136/chapter/Recommendations",
+    "chronic_asthma": "https://www.nice.org.uk/guidance/ng245/chapter/Recommendations",
+    "type_2_diabetes": "https://www.who.int/publications/i/item/use-of-glycated-haemoglobin-%28-hba1c%29-in-diagnosis-of-diabetes-mellitus",
+    "gord": "https://www.nice.org.uk/guidance/cg184/chapter/Recommendations"
+  },
+  "cases": [
+    {
+      "case_id": "mdp-htn-01",
+      "cohort": "diagnostic",
+      "disease_stratum": "hypertension",
+      "diagnosis_disclosed": false,
+      "case_text": "A 52-year-old adult has clinic blood-pressure readings of 156/96 and 154/94 mmHg on separate visits. Daytime ambulatory average is 146/91 mmHg. There is no previous diagnosis, no current medication, and no known drug allergy.",
+      "reference_diagnosis_aliases": ["hypertension", "essential hypertension", "high blood pressure"],
+      "expected_warning_types": []
+    },
+    {
+      "case_id": "mdp-htn-02",
+      "cohort": "diagnostic",
+      "disease_stratum": "hypertension",
+      "diagnosis_disclosed": false,
+      "case_text": "A 61-year-old woman feels well but has repeated clinic readings near 150/92 mmHg. A seven-day home record, after discarding day one, averages 143/89 mmHg. She takes no prescribed medicines and reports no drug allergies.",
+      "reference_diagnosis_aliases": ["hypertension", "essential hypertension", "high blood pressure"],
+      "expected_warning_types": []
+    },
+    {
+      "case_id": "mdp-htn-03",
+      "cohort": "diagnostic",
+      "disease_stratum": "hypertension",
+      "diagnosis_disclosed": false,
+      "case_text": "A 46-year-old man was referred after several clinic blood-pressure measurements above 145/90 mmHg. His average daytime ambulatory pressure is 139/87 mmHg. He has no known cardiovascular diagnosis and is not taking medicines.",
+      "reference_diagnosis_aliases": ["hypertension", "essential hypertension", "high blood pressure"],
+      "expected_warning_types": []
+    },
+    {
+      "case_id": "mdp-asthma-01",
+      "cohort": "diagnostic",
+      "disease_stratum": "chronic_asthma",
+      "diagnosis_disclosed": false,
+      "case_text": "A 29-year-old adult reports intermittent wheeze, chest tightness and cough that recur at night and after exercise. Symptoms vary over the week. An objective bronchodilator test documents reversible airflow obstruction. There is no fever or acute respiratory distress.",
+      "reference_diagnosis_aliases": ["asthma", "bronchial asthma"],
+      "expected_warning_types": []
+    },
+    {
+      "case_id": "mdp-asthma-02",
+      "cohort": "diagnostic",
+      "disease_stratum": "chronic_asthma",
+      "diagnosis_disclosed": false,
+      "case_text": "A 37-year-old woman has episodic wheezing and shortness of breath triggered by cold air and exercise, with symptom-free intervals. FeNO is 62 ppb during assessment. She is comfortable at rest and has no previous respiratory diagnosis.",
+      "reference_diagnosis_aliases": ["asthma", "bronchial asthma"],
+      "expected_warning_types": []
+    },
+    {
+      "case_id": "mdp-asthma-03",
+      "cohort": "diagnostic",
+      "disease_stratum": "chronic_asthma",
+      "diagnosis_disclosed": false,
+      "case_text": "A 44-year-old adult describes recurrent nocturnal cough with occasional expiratory wheeze and breathlessness, worse around dust exposure. Serial peak-flow measurements show marked variability over two weeks. No acute severe symptoms are present.",
+      "reference_diagnosis_aliases": ["asthma", "bronchial asthma"],
+      "expected_warning_types": []
+    },
+    {
+      "case_id": "mdp-t2d-01",
+      "cohort": "diagnostic",
+      "disease_stratum": "type_2_diabetes",
+      "diagnosis_disclosed": false,
+      "case_text": "A 58-year-old adult reports several months of thirst and frequent urination. Laboratory HbA1c is 59 mmol/mol (7.5%) and is 58 mmol/mol on repeat testing. There is no pregnancy, acute illness, or known cause of an unreliable HbA1c result.",
+      "reference_diagnosis_aliases": ["type 2 diabetes mellitus", "type 2 diabetes", "diabetes mellitus type 2", "t2dm"],
+      "expected_warning_types": []
+    },
+    {
+      "case_id": "mdp-t2d-02",
+      "cohort": "diagnostic",
+      "disease_stratum": "type_2_diabetes",
+      "diagnosis_disclosed": false,
+      "case_text": "A 63-year-old man undergoing routine adult primary-care assessment has fasting plasma glucose of 8.2 mmol/L, repeated at 8.0 mmol/L on another morning. He has gradual weight gain and no acute illness, ketoacidosis, or prior glucose-lowering therapy.",
+      "reference_diagnosis_aliases": ["type 2 diabetes mellitus", "type 2 diabetes", "diabetes mellitus type 2", "t2dm"],
+      "expected_warning_types": []
+    },
+    {
+      "case_id": "mdp-t2d-03",
+      "cohort": "diagnostic",
+      "disease_stratum": "type_2_diabetes",
+      "diagnosis_disclosed": false,
+      "case_text": "A 54-year-old woman describes fatigue, thirst and more frequent urination. Two accredited laboratory HbA1c results several weeks apart are 53 and 55 mmol/mol. She has no pregnancy, haemoglobin disorder, or recent transfusion reported.",
+      "reference_diagnosis_aliases": ["type 2 diabetes mellitus", "type 2 diabetes", "diabetes mellitus type 2", "t2dm"],
+      "expected_warning_types": []
+    },
+    {
+      "case_id": "mdp-gord-01",
+      "cohort": "diagnostic",
+      "disease_stratum": "gord",
+      "diagnosis_disclosed": false,
+      "case_text": "A 42-year-old adult has recurring burning behind the breastbone and sour fluid reaching the mouth after large meals and when lying down. Symptoms have occurred for two months. There is no difficulty swallowing, weight loss, or bleeding reported.",
+      "reference_diagnosis_aliases": ["gastroesophageal reflux disease", "gastro-oesophageal reflux disease", "gerd", "gord", "acid reflux disease"],
+      "expected_warning_types": []
+    },
+    {
+      "case_id": "mdp-gord-02",
+      "cohort": "diagnostic",
+      "disease_stratum": "gord",
+      "diagnosis_disclosed": false,
+      "case_text": "A 48-year-old woman reports repeated heartburn and acid regurgitation, especially after evening meals. Bending forward or lying flat worsens symptoms, which have persisted for six weeks. She reports no dysphagia, vomiting blood, or unexplained weight loss.",
+      "reference_diagnosis_aliases": ["gastroesophageal reflux disease", "gastro-oesophageal reflux disease", "gerd", "gord", "acid reflux disease"],
+      "expected_warning_types": []
+    },
+    {
+      "case_id": "mdp-gord-03",
+      "cohort": "diagnostic",
+      "disease_stratum": "gord",
+      "diagnosis_disclosed": false,
+      "case_text": "A 55-year-old man describes recurrent retrosternal burning and a sour taste at night for three months. It is worse after late meals and improves when upright. He reports no swallowing difficulty or gastrointestinal bleeding.",
+      "reference_diagnosis_aliases": ["gastroesophageal reflux disease", "gastro-oesophageal reflux disease", "gerd", "gord", "acid reflux disease"],
+      "expected_warning_types": []
+    }
+  ]
+}

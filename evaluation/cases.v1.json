@@ -1,0 +1,44 @@
+{
+  "dataset_id": "synthetic-claim-evaluation",
+  "dataset_version": "1.0.0",
+  "origin": "Hand-authored synthetic engineering fixtures; not clinician adjudicated or a clinical benchmark",
+  "scope": "Explicitly documented diagnoses and limited amlodipine safety facts; no inferred diagnosis gold labels",
+  "cases": [
+    {
+      "case_id": "htn-amlodipine-allergy",
+      "case_text": "A 62-year-old woman with previously diagnosed hypertension currently takes amlodipine. She reports that she is allergic to amlodipine.",
+      "reference_diagnosis_aliases": ["hypertension", "essential hypertension"],
+      "expected_warning_types": ["amlodipine_allergy"]
+    },
+    {
+      "case_id": "htn-amlodipine-simvastatin",
+      "case_text": "A 59-year-old man with confirmed hypertension reports recurring headaches and currently takes amlodipine and simvastatin. He reports no known drug allergies.",
+      "reference_diagnosis_aliases": ["hypertension", "essential hypertension"],
+      "expected_warning_types": ["amlodipine_simvastatin"]
+    },
+    {
+      "case_id": "htn-allergy-unknown",
+      "case_text": "A 64-year-old man with known hypertension currently takes amlodipine. His allergy history was not supplied.",
+      "reference_diagnosis_aliases": ["hypertension", "essential hypertension"],
+      "expected_warning_types": ["allergy_status_unconfirmed"]
+    },
+    {
+      "case_id": "htn-no-identified-warning",
+      "case_text": "A 57-year-old woman with confirmed hypertension currently takes amlodipine. She has no known drug allergies and reports no other current medications.",
+      "reference_diagnosis_aliases": ["hypertension", "essential hypertension"],
+      "expected_warning_types": []
+    },
+    {
+      "case_id": "htn-pregnancy-out-of-scope",
+      "case_text": "A 30-year-old pregnant woman has a documented diagnosis of hypertension. She takes no medications and reports no known drug allergies.",
+      "reference_diagnosis_aliases": ["hypertension", "essential hypertension"],
+      "expected_warning_types": []
+    },
+    {
+      "case_id": "known-gerd-out-of-scope",
+      "case_text": "A 45-year-old man has a previously documented diagnosis of gastroesophageal reflux disease and reports burning in his chest after heavy meals. He takes a multivitamin and reports no known drug allergies.",
+      "reference_diagnosis_aliases": ["gastroesophageal reflux disease", "GERD"],
+      "expected_warning_types": []
+    }
+  ]
+}
